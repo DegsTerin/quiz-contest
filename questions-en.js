@@ -1,1102 +1,1102 @@
 const EN_QUESTION_TRANSLATIONS = {
   "cg-01": {
-    "prompt": "According to Errata nº 01 of the notice, how was the distribution of the Objective Test for all positions?",
+    "prompt": "In recent FURB tests, it is common to demand literally the rules of the notice. For the position of IT Analyst of Notice SED/SC 794/2026, considering Errata nº 01, the objective test now has:",
     "options": [
       "10 questions on General Knowledge, 10 on Computer Knowledge and 20 on Specific Knowledge.",
-      "20 questions on General Knowledge, 10 on Computer Knowledge and 10 on Specific Knowledge.",
-      "10 questions in Portuguese, 10 in Mathematics, 10 in IT and 10 in Legislation.",
-      "40 questions exclusively on Specific Knowledge.",
-      "10 questions on Teaching Practice Methodology, 10 on IT and 20 on Legislation."
+      "5 questions on General Knowledge, 15 on Computer Knowledge and 20 on Specific Knowledge.",
+      "10 questions in Portuguese, 10 in Legislation, 10 in IT and 10 in Logical Reasoning.",
+      "20 General Knowledge questions and 20 Specific Knowledge questions.",
+      "40 Specific Knowledge questions, without division into areas."
     ],
-    "explanation": "Errata nº 01 unified the distribution: 10 of General Knowledge, 10 of Computer Concepts and 20 of Specific Knowledge."
+    "explanation": "The corrected distribution for notice 794/SED/2026 is 10 + 10 + 20."
   },
   "cg-02": {
-    "prompt": "What is the minimum score required to pass the Objective Test?",
+    "prompt": "In the notice, approval in the objective test requires a minimum score. Select the correct alternative:",
     "options": [
-      "5.00 points.",
-      "6.00 points.",
-      "7.00 points.",
-      "8.00 points.",
-      "Just show up for the test."
+      "The minimum grade is 5.00, as long as the candidate gets half of the specific questions right.",
+      "The minimum grade is 6.00 in the objective test.",
+      "Approval depends only on classification within the vacancies.",
+      "The minimum grade is 7.00 for all positions.",
+      "The objective test has a classificatory nature only."
     ],
-    "explanation": "The notice establishes approval with a minimum score of 6.00 points in the Objective Test."
+    "explanation": "The notice provides for a minimum grade of 6.00 in the objective test."
   },
   "cg-03": {
-    "prompt": "For candidates without special legal support, which tiebreaker criteria comes first after the legal age?",
+    "prompt": "Analyze the statements about ethics and performance in public service: I. The public agent must avoid situations in which private interests can influence functional decisions. II. Impersonality allows favored treatment when there is good intention. III. The publicity of administrative acts coexists with legal hypotheses of secrecy. What is stated in:",
     "options": [
-      "Highest score in titles.",
-      "Greater number of correct answers in Specific Knowledge.",
-      "Higher number of correct answers in General Knowledge.",
-      "Highest number of correct answers in Computer Science Notions.",
-      "Alphabetical order of name."
+      "I, just.",
+      "II, only.",
+      "I and III only.",
+      "II and III only.",
+      "I, II and III."
     ],
-    "explanation": "After the legal age rule when applicable, the notice prioritizes more correct answers in Specific Knowledge."
+    "explanation": "Conflicts of interest must be avoided and advertising does not eliminate legal confidentiality. Impersonality does not admit favoritism."
   },
   "cg-04": {
-    "prompt": "Which principle of Public Administration requires action focused on the public interest, without personal favors?",
+    "prompt": "In a public secretariat, a server receives a request to access a statistical report without identifiable personal data. According to the logic of the Access to Information Law, the most appropriate conduct is:",
     "options": [
-      "Impersonality.",
-      "Advertising.",
-      "Efficiency.",
-      "Morality.",
-      "Specialty."
+      "Deny access because every internal document is confidential.",
+      "Require detailed justification from the citizen before filing.",
+      "Provide or guide access, unless there is a specific legal restriction.",
+      "Release only if there is judicial authorization.",
+      "Respond verbally, without recording the service."
     ],
-    "explanation": "Impersonality prevents personal favors and guides administrative action towards the public interest."
+    "explanation": "The LAI starts with publicity as a rule and secrecy as a legally justified exception."
   },
   "cg-05": {
-    "prompt": "In the Access to Information Law, active transparency means:",
+    "prompt": "Regarding LGPD in educational systems, record V for true and F for false: (__) Student data may include sensitive data. (__) The purpose of the processing must be determined and legitimate. (__) Minimization allows collecting data unrelated to public policy. (__) Security measures are compatible with transparency. The correct sequence is:",
     "options": [
-      "Provide information only after a court order.",
-      "Disclose public information of collective interest regardless of request.",
-      "Keep all administrative acts confidential.",
-      "Respond only to requests made by public servants.",
-      "Require mandatory justification for any request for information."
+      "V - V - F - V.",
+      "V - F - V - V.",
+      "F - V - F - V.",
+      "V - V - V - F.",
+      "F - F - V - F."
     ],
-    "explanation": "Active transparency is the spontaneous publication of relevant public information, without the need for an individual request."
+    "explanation": "Educational data may be sensitive; purpose and security are central principles; Minimization does not authorize excess."
   },
   "cg-06": {
-    "prompt": "In the context of the LGPD, which principle limits the processing of personal data to the minimum necessary?",
+    "prompt": "In risk management, a team identifies the possibility of unavailability of the registration system during a critical period. The technically most appropriate answer is:",
     "options": [
-      "Suitability.",
-      "Necessity.",
-      "Free access.",
-      "Data quality.",
-      "Non-discrimination."
+      "Wait for the failure to occur and then hire emergency support.",
+      "Register the risk, estimate impact/probability and define treatment and contingency plan.",
+      "Eliminate all controls to reduce operational costs.",
+      "Transfer responsibility entirely to the end user.",
+      "Delete logs to avoid liability."
     ],
-    "explanation": "The principle of necessity determines that only data essential to the purpose be processed."
+    "explanation": "Risk management requires identification, analysis, treatment, monitoring and contingency planning."
   },
   "cg-07": {
-    "prompt": "In public service ethics, a conflict of interest situation occurs when:",
+    "prompt": "Citizen language in public communication seeks to:",
     "options": [
-      "The server uses technical criteria to decide.",
-      "A private interest can influence the impartial exercise of public functions.",
-      "The server declares himself unable to act in proceedings related to a family member.",
-      "The administration publishes public data on the institutional portal.",
-      "The team documents an administrative decision."
+      "Increase the use of technical jargon to reinforce authority.",
+      "Standardize responses without considering the citizen's request.",
+      "Make information clear, objective, accessible and useful to the public.",
+      "Replace formal records with informal messages.",
+      "Restrict communication to internal acronyms."
     ],
-    "explanation": "There is a conflict of interests when private interests can compromise the impartiality of public action."
+    "explanation": "Public communication must be understandable and citizen-oriented."
   },
   "cg-08": {
-    "prompt": "Institutional risk management involves, in logical sequence:",
+    "prompt": "Associate the concepts: 1. Active transparency. 2. Passive transparency. 3. Personal data. (__) Spontaneous disclosure of public information. (__) Information related to an identified or identifiable natural person. (__) Response to request for information presented by the interested party. The correct sequence is:",
     "options": [
-      "Ignore, transfer and archive risks.",
-      "Identify, analyze, treat and monitor risks.",
-      "Punish, hide, replace and erase risks.",
-      "Centralize, outsource and eliminate controls.",
-      "Buy, pay and close risks."
+      "1 - 3 - 2.",
+      "2 - 1 - 3.",
+      "3 - 2 - 1.",
+      "1 - 2 - 3.",
+      "2 - 3 - 1."
     ],
-    "explanation": "The basic risk management cycle involves identification, analysis, treatment and monitoring."
+    "explanation": "Active is spontaneous publication; personal data identifies people; passive responds to requests."
   },
   "cg-09": {
-    "prompt": "In the Brazilian federative organization, the Union, States and Municipalities:",
+    "prompt": "In Brazilian federalism, the execution of educational policies involves:",
     "options": [
-      "They have powers distributed by the Constitution.",
-      "They always act hierarchically subordinate to the Municipalities.",
-      "They cannot execute public social policies.",
-      "They have the same skills in any subject.",
-      "They depend on private authorization to legislate."
+      "Competencies distributed between the Union, States, Federal District and Municipalities.",
+      "Hierarchical subordination of States to Municipalities.",
+      "Exclusive action by the Union in all public schools.",
+      "Prohibition of cooperation between federative entities.",
+      "Only private competence for school management."
     ],
-    "explanation": "Brazilian federalism distributes powers among federal entities in accordance with the Constitution."
+    "explanation": "The Constitution organizes common, private and competing powers between federative entities."
   },
   "cg-10": {
-    "prompt": "When serving citizens, civic language means prioritizing:",
+    "prompt": "In the continuity of digital public services, consider: I. Continuity plan must prioritize essential services. II. Backup is only valid if it is never tested, to preserve integrity. III. Communication with users and managers helps reduce the impact of unavailability. That's correct:",
     "options": [
-      "Technical terms without explanation.",
-      "Clarity, objectivity and understanding by the public.",
-      "Internal acronyms in all documents.",
-      "Standardized responses unrelated to the request.",
-      "Verbal communication only."
+      "I, just.",
+      "II, only.",
+      "I and III only.",
+      "II and III only.",
+      "I, II and III."
     ],
-    "explanation": "Citizen language seeks to make public communication clear, accessible and useful to citizens."
-  },
-  "cg-11": {
-    "prompt": "In the continuity of public services, an appropriate strategy in the event of critical system unavailability is:",
-    "options": [
-      "Wait for normalization without a contingency plan.",
-      "Activate a continuity plan, communicate with interested parties and prioritize essential services.",
-      "Delete logs to avoid liability.",
-      "Suspend all services indefinitely.",
-      "Delegate the decision exclusively to the supplier without supervision."
-    ],
-    "explanation": "Continuity requires planning, communication, prioritization and controlled restoration of essential services."
-  },
-  "cg-12": {
-    "prompt": "Sustainability in public management can involve:",
-    "options": [
-      "Socio-environmental criteria in purchasing and responsible use of resources.",
-      "Increased waste to speed up hiring.",
-      "Disposal of equipment without asset control.",
-      "Total prohibition on public purchases.",
-      "Exclusive use of paper in all processes."
-    ],
-    "explanation": "Sustainability in public management includes socio-environmental criteria, efficiency and institutional responsibility."
+    "explanation": "Backups need to be tested; prioritization and communication are continuity practices."
   },
   "ni-01": {
-    "prompt": "Which alternative correctly describes an intranet?",
+    "prompt": "In an administrative environment, an intranet is characterized by:",
     "options": [
-      "An organization's private network, based on internet technologies.",
-      "Public worldwide network without access control.",
-      "Program used only for image editing.",
-      "Physical device that replaces the router.",
-      "Presentation file format."
+      "An organization's private network, with controlled access and internal services.",
+      "Public worldwide network without any access control.",
+      "Exclusive application for editing images.",
+      "Physical device used to replace RAM memory.",
+      "Compressed file format."
     ],
-    "explanation": "An intranet is a private institutional network that uses protocols and technologies common to the internet."
+    "explanation": "Intranet is a private institutional network based on network/internet technologies."
   },
   "ni-02": {
-    "prompt": "In text editors, which feature is most suitable for maintaining standardized titles and automatically generating a table of contents?",
+    "prompt": "A server received a spreadsheet with school data and needs to add values only from lines that meet a certain criteria. In electronic spreadsheets, the function most compatible with this purpose is:",
     "options": [
-      "Heading styles.",
-      "Page zoom.",
-      "Cut and paste.",
-      "Airplane mode.",
-      "Browser history."
+      "AVERAGE.",
+      "SOMASE.",
+      "VALUES COUNT.",
+      "VLOOKUP without criteria.",
+      "HYPERLINK."
     ],
-    "explanation": "Styles structure the document and enable automatic features such as table of contents."
+    "explanation": "SUMIF adds values conditioned to a criterion."
   },
   "ni-03": {
-    "prompt": "In spreadsheets, the formula `=SUM(A1:A10)` has the function of:",
+    "prompt": "In text editors, using heading styles is recommended because:",
     "options": [
-      "Order the values from A1 to A10.",
-      "Add the values from the range A1 to A10.",
-      "Transform text into image.",
-      "Create a pie chart automatically.",
-      "Block spreadsheet editing."
+      "Allows you to structure the document and automatically generate a summary.",
+      "Prevents export to PDF.",
+      "Replaces spell checking with encryption.",
+      "Mandatory removes metadata.",
+      "Blocks document printing."
     ],
-    "explanation": "The SUM function adds the values contained in the specified range."
+    "explanation": "Styles structure documents and enable features such as automatic table of contents."
   },
   "ni-04": {
-    "prompt": "Which practice reduces the risk of file loss in a cloud environment?",
+    "prompt": "When sharing institutional documents in the cloud, the safest practice is:",
     "options": [
-      "Always work without synchronization.",
-      "Maintain folder organization, sharing control and backup copies when necessary.",
-      "Share all files as public.",
-      "Use identical names for all documents.",
-      "Delete old unrated versions."
+      "Define permissions by least necessary privilege and review access.",
+      "Send public edit link to any recipient.",
+      "Use the same password for all users.",
+      "Save copies without version control.",
+      "Waive authentication as it is an educational file."
     ],
-    "explanation": "Organization, access control and backup reduce losses and undue exposure."
+    "explanation": "Sharing control and least privilege reduce undue exposure."
   },
   "ni-05": {
-    "prompt": "In Google Workspace, which tool is most suitable for creating electronic response collection forms?",
+    "prompt": "An email informs that the institutional account will be blocked and requests a password via an external link. The correct conduct is:",
     "options": [
-      "Google Forms.",
-      "Google Meet.",
-      "Google Calendar.",
-      "Google Chat.",
-      "Google Keep."
+      "Enter the password to avoid blocking.",
+      "Download attachments to verify authenticity.",
+      "Check sender, do not click on the link and activate the security channel.",
+      "Forward to all contacts.",
+      "Respond asking for confirmation of your password."
     ],
-    "explanation": "Google Forms is the tool aimed at creating forms and collecting structured responses."
+    "explanation": "The scenario indicates phishing; interaction should be avoided and security should be activated."
   },
   "ni-06": {
-    "prompt": "When receiving an email with a suspicious link requesting an institutional password, the safest course of action is:",
-    "options": [
-      "Click quickly before it expires.",
-      "Reply with username and password.",
-      "Check sender, avoid clicking and activate the organization's security channel.",
-      "Forward to all colleagues.",
-      "Download attachments to confirm."
-    ],
-    "explanation": "The situation suggests phishing; Interaction must be avoided and security procedures must be activated."
-  },
-  "ni-07": {
-    "prompt": "Which alternative only mentions web browsers?",
+    "prompt": "Select the alternative that only presents web browsers:",
     "options": [
       "Chrome, Firefox and Edge.",
       "Word, Excel and PowerPoint.",
-      "Windows, Android and iOS.",
+      "Android, Windows and Linux.",
       "PDF, DOCX and XLSX.",
-      "CPU, RAM and SSD."
+      "CPU, SSD and RAM."
     ],
-    "explanation": "Chrome, Firefox and Edge are browsers used to access web pages and systems."
+    "explanation": "Chrome, Firefox and Edge are browsers."
+  },
+  "ni-07": {
+    "prompt": "Regarding PDF files, it is correct to state that:",
+    "options": [
+      "They are useful for preserving layout and making it easier to read on different devices.",
+      "They always allow editing without any specific tool.",
+      "They replace relational databases.",
+      "Run administrative scripts by default.",
+      "They eliminate the need for a digital signature when there is legal validity."
+    ],
+    "explanation": "PDF is a format aimed at preserving the presentation and distribution of documents."
   },
   "ni-08": {
-    "prompt": "The PDF format is especially useful when you want to:",
-    "options": [
-      "Preserve layout and make reading easier on different devices.",
-      "Execute code directly in the operating system.",
-      "Replace relational database.",
-      "Increase RAM memory.",
-      "Create wireless network."
-    ],
-    "explanation": "PDF is used to preserve visual presentation and distribute documents consistently."
-  },
-  "ni-09": {
-    "prompt": "Which option represents mobile operating systems?",
-    "options": [
-      "Android and iOS.",
-      "Chrome and Firefox.",
-      "PDF and DOCX.",
-      "HTTP and HTTPS.",
-      "SQL and NoSQL."
-    ],
-    "explanation": "Android and iOS are operating systems used on mobile devices."
-  },
-  "ni-10": {
-    "prompt": "In file management, a good practice in a shared environment is:",
-    "options": [
-      "Use descriptive names and control access permissions.",
-      "Save everything to any user's desktop.",
-      "Give public editing permission for confidential documents.",
-      "Delete files without checking retention or need.",
-      "Avoid any organization by folders."
-    ],
-    "explanation": "Clear names and proper permissions improve findability, collaboration, and security."
-  },
-  "ni-11": {
-    "prompt": "Which feature is suitable for remote meetings with audio, video, and screen sharing?",
-    "options": [
-      "Video conference.",
-      "File compressor.",
-      "Local task manager.",
-      "Hex editor.",
-      "Disk defragmenter."
-    ],
-    "explanation": "Video conferencing tools allow synchronous communication with audio, video and screen."
-  },
-  "ni-12": {
-    "prompt": "Information security basics include:",
+    "prompt": "The classic information security triad is made up of:",
     "options": [
       "Confidentiality, integrity and availability.",
-      "Download speed only.",
-      "Text editing only.",
-      "Only font choice in presentations.",
-      "Exclusively use of images."
+      "Speed, design and portability.",
+      "Backup, printing and editing.",
+      "Memory, CPU and disk.",
+      "Login, password and browser."
     ],
-    "explanation": "The triad of confidentiality, integrity and availability is the foundation of information security."
+    "explanation": "CID is the conceptual basis of information security."
   },
-  "ni-13": {
-    "prompt": "In an internet search, the use of quotation marks in an expression is generally used to:",
+  "ni-09": {
+    "prompt": "In an internet search, which query tends to find the exact expression special education policy?",
     "options": [
-      "Search for the exact phrase.",
-      "Automatically translate the page.",
-      "Delete old results.",
-      "Prevent HTTPS connection.",
-      "Download all files from the page."
+      "politics OR education OR special",
+      "\"special education policy\"",
+      "politics -education -special",
+      "website: no search term",
+      "policy * without mandatory quotes"
     ],
-    "explanation": "Quotation marks guide the search engine to look for the exact expression provided."
+    "explanation": "Quotation marks indicate a search for an exact expression in search engines."
+  },
+  "ni-10": {
+    "prompt": "When managing files as a team, a good practice is:",
+    "options": [
+      "Use descriptive names, versioning and appropriate permissions.",
+      "Save everything to a user's desktop.",
+      "Delete old documents without retention rule.",
+      "Give public edition to sensitive documents.",
+      "Avoid any organization by folders."
+    ],
+    "explanation": "Organization, versioning and access control reduce loss and confusion."
   },
   "ce-01": {
-    "prompt": "In computer architecture, which component executes instructions and coordinates logical and arithmetic operations?",
+    "prompt": "In computer architecture, cache memory's main purpose is:",
     "options": [
-      "CPU.",
-      "SSD.",
-      "Monitor.",
-      "Switch.",
-      "Power supply."
+      "Bring frequently accessed data and instructions closer to the CPU to reduce latency.",
+      "Permanently store institutional backups.",
+      "Replace the operating system.",
+      "Convert IPv4 addresses to IPv6.",
+      "Exclusively perform entry and exit operations."
     ],
-    "explanation": "The CPU is the central processing unit responsible for executing instructions."
+    "explanation": "Cache reduces average access time between CPU and main memory."
   },
   "ce-02": {
-    "prompt": "In operating systems, process scheduling mainly deals with:",
+    "prompt": "Regarding operating systems, analyze: I. Scheduling decides the order of CPU usage by processes. II. Deadlock involves circular waiting and retained resources. III. Virtual memory completely prevents physical memory shortages. That's correct:",
     "options": [
-      "Define which process will use the CPU and for how long.",
-      "Choose the user's password.",
-      "Format external monitors.",
-      "Encrypt network cables.",
-      "Replace persistent memory with volatile memory."
+      "I and II only.",
+      "I and III only.",
+      "II and III only.",
+      "III, only.",
+      "I, II and III."
     ],
-    "explanation": "The scheduler decides the CPU allocation between ready-to-run processes."
+    "explanation": "Virtual memory helps with management, but does not eliminate physical limits."
   },
   "ce-03": {
-    "prompt": "Paging in memory management aims to:",
+    "prompt": "In file systems, read, write, and execute permissions are used to:",
     "options": [
-      "Divide virtual and physical memory into blocks to allow flexible mapping.",
-      "Increase processor frequency.",
-      "Replace the file system.",
-      "Automatically create administrative users.",
-      "Eliminate the need for RAM memory."
+      "Control actions allowed to users or groups on files and directories.",
+      "Exclusively set the disk speed.",
+      "Automatically encrypt file contents.",
+      "Determine the subnet mask.",
+      "Create SQL indexes."
     ],
-    "explanation": "Paging allows you to map virtual pages onto physical frames, supporting virtual memory."
+    "explanation": "Permissions control access and operations on the file system."
   },
   "ce-04": {
-    "prompt": "In the OSI model, routing and logical addressing belong to the layer:",
+    "prompt": "In the OSI model, routing between networks and logical addressing are typical functions of the layer:",
     "options": [
       "Physics.",
       "Link.",
       "Network.",
-      "Transport.",
+      "Session.",
       "Application."
     ],
-    "explanation": "The Network layer deals with logical addressing and routing between networks."
+    "explanation": "The network layer deals with logical addressing and routing."
   },
   "ce-05": {
-    "prompt": "In IPv4, the /24 mask corresponds to:",
+    "prompt": "An IPv4 network 192.168.10.0/26 has, disregarding network and broadcast, how many usable addresses?",
     "options": [
-      "255.0.0.0.",
-      "255.255.0.0.",
-      "255.255.255.0.",
-      "255,255,255,252.",
-      "255,255,255,255."
+      "30.",
+      "62.",
+      "126.",
+      "254.",
+      "510."
     ],
-    "explanation": "The /24 prefix indicates 24 network bits, equivalent to the mask 255.255.255.0."
+    "explanation": "/26 leaves 6 bits for hosts: 2^6 - 2 = 62."
   },
   "ce-06": {
-    "prompt": "What protocol is used to translate domain names to IP addresses?",
+    "prompt": "Associate protocol and purpose: 1. DNS. 2. DHCP. 3.NTP. (__) Time synchronization. (__) Name resolution. (__) Dynamic assignment of IP addresses. The correct sequence is:",
     "options": [
-      "DNS.",
-      "SMTP.",
-      "SSH.",
-      "SNMP.",
-      "NTP."
+      "3 - 1 - 2.",
+      "1 - 2 - 3.",
+      "2 - 3 - 1.",
+      "3 - 2 - 1.",
+      "1 - 3 - 2."
     ],
-    "explanation": "DNS performs name resolution by converting domains into IP addresses."
+    "explanation": "NTP synchronizes time, DNS resolves names, and DHCP assigns addresses."
   },
   "ce-07": {
-    "prompt": "In network monitoring, SNMP is mainly used to:",
+    "prompt": "In infrastructure monitoring, SNMP is mainly used to:",
     "options": [
-      "Collect information and metrics from managed devices.",
-      "Encrypt web connections.",
-      "Convert documents to PDF.",
-      "Execute SQL queries.",
-      "Distribute addresses via DHCP exclusively."
+      "Collect metrics and information from agent-managed devices.",
+      "Encrypt web sessions by digital certificates.",
+      "Execute transactional queries in SQL.",
+      "Provide IP addresses to printers only.",
+      "Manage source code versions."
     ],
-    "explanation": "SNMP allows you to manage and monitor network equipment through agents and information bases."
+    "explanation": "SNMP is a network device management and monitoring protocol."
   },
   "ce-08": {
-    "prompt": "In wireless networks, WPA3 improves security over previous standards primarily by:",
+    "prompt": "In wireless networks, an improvement associated with WPA3 over previous standards is:",
     "options": [
-      "Use stronger authentication mechanisms and protection against offline dictionary attacks.",
-      "Eliminate the need for a password on any network.",
-      "Replace IP addressing with Bluetooth.",
-      "Automatically increase the physical range of the antenna.",
-      "Prevent any electromagnetic interference."
+      "Increased resistance to offline dictionary attacks on personal networks.",
+      "Total exemption from authentication.",
+      "Replacing IP with Bluetooth.",
+      "Guaranteed increase in the physical range of the router.",
+      "Absolute impossibility of interference."
     ],
-    "explanation": "WPA3 strengthens authentication and cryptographic protection, including against password guessing attacks."
+    "explanation": "WPA3 strengthens authentication and cryptographic protection mechanisms."
   },
   "ce-09": {
     "prompt": "Server virtualization allows:",
     "options": [
-      "Run multiple virtual machines on the same physical hardware.",
-      "Remove the need for operating system.",
-      "Transform all software into hardware.",
-      "Ensure infinite availability without backup.",
-      "Replace TCP/IP networks with spreadsheets."
+      "Run multiple isolated virtual machines on the same physical hardware.",
+      "Eliminate the need for backup.",
+      "Remove all guest operating systems.",
+      "Swap TCP/IP protocols for spreadsheets.",
+      "Ensure infinite availability."
     ],
-    "explanation": "Virtualization abstracts physical resources to host multiple isolated virtual machines."
+    "explanation": "Virtualization abstracts hardware and allows multiple VMs."
   },
   "ce-10": {
-    "prompt": "In cloud computing, IaaS mainly offers the customer:",
+    "prompt": "In cloud computing, IaaS mainly corresponds to offering:",
     "options": [
-      "Infrastructure such as virtual machines, networks and storage.",
-      "Office-ready applications only.",
-      "Legal advice only.",
-      "Printed material and in-person training.",
-      "Exclusively email accounts."
+      "Virtual machines, networks, storage and infrastructure resources.",
+      "Ultimate office applications without configuration.",
+      "Agile methodology only.",
+      "In-person training only.",
+      "Legal licenses."
     ],
-    "explanation": "IaaS delivers basic computing infrastructure resources on demand."
+    "explanation": "IaaS provides on-demand computing infrastructure."
   },
   "ce-11": {
-    "prompt": "The 3-2-1 backup strategy recommends:",
+    "prompt": "The 3-2-1 backup rule recommends:",
     "options": [
       "Three copies, on two types of media, with one copy outside the main environment.",
-      "Three passwords, two users and a spreadsheet.",
+      "Three passwords for two users and one administrator.",
+      "One annual local backup and two printed reports.",
       "Three servers with no external copy.",
-      "Two annual backups and one manual restore.",
-      "A local copy kept indefinitely."
+      "Two public copies and a shared password."
     ],
-    "explanation": "The 3-2-1 rule reduces risk of loss by maintaining redundancy and an external or isolated copy."
+    "explanation": "The 3-2-1 rule increases resilience against failures and disasters."
   },
   "ce-12": {
-    "prompt": "In relational modeling, a foreign key is used to:",
+    "prompt": "In relational databases, a foreign key has the following function:",
     "options": [
-      "Relate one table to another by reference to a key.",
-      "Encrypt all records automatically.",
-      "Create incremental backup.",
-      "Replace the primary key with free text.",
-      "Eliminate normalization."
+      "Represent reference between tables and support referential integrity.",
+      "Encrypt all fields in a table.",
+      "Eliminate the need for a primary key.",
+      "Automatically create differential backup.",
+      "Replace SQL commands with XML files."
     ],
-    "explanation": "The foreign key represents a relationship between tables and preserves referential integrity."
+    "explanation": "Foreign key references key in another table."
   },
   "ce-13": {
-    "prompt": "In the ACID context of transactions, atomicity means that:",
+    "prompt": "In ACID transactions, atomicity means that:",
     "options": [
-      "The transaction is executed in full or has no partial effect.",
-      "All data is public.",
-      "Queries always return in alphabetical order.",
+      "The transaction takes place in full or leaves no partial effect.",
+      "All users see unconfirmed data.",
+      "Indexes are cleared after each query.",
       "The bank does not require competition control.",
-      "Indexes are recreated with each SELECT."
+      "Queries always return ordered by primary key."
     ],
-    "explanation": "Atomicity guarantees all-or-nothing, avoiding partial states in case of failure."
+    "explanation": "Atomicity is the all-or-nothing property of the transaction."
   },
   "ce-14": {
-    "prompt": "A suitable way to reduce the risk of SQL Injection in an API is:",
+    "prompt": "To reduce the risk of SQL Injection into an API, the most appropriate practice is:",
     "options": [
       "Use parameterized queries and input validation.",
-      "Concatenate strings received from the user directly into SQL.",
-      "Disable error logs.",
-      "Always run the bank as an administrator.",
-      "Store passwords in clear text."
+      "Directly concatenate parameters received in SQL.",
+      "Always run the application as DBA.",
+      "Hide error messages and maintain concatenation.",
+      "Store passwords in clear text to facilitate auditing."
     ],
-    "explanation": "Parameterized queries separate data from SQL commands and reduce injection exploitation."
+    "explanation": "Prepared statements separate data from SQL commands."
   },
   "ce-15": {
-    "prompt": "In version control, a commit represents:",
+    "prompt": "In Git, a commit represents:",
     "options": [
-      "A record of changes at a point in the repository's history.",
-      "A routing protocol.",
-      "A type of cache memory.",
-      "A firewall policy.",
-      "A database index."
+      "Versioned recording of a set of changes to the repository.",
+      "Firewall rule applied to the server.",
+      "Network packet without confirmation.",
+      "Database index.",
+      "Process in blocked state."
     ],
-    "explanation": "Commit records a set of versioned changes in the repository."
+    "explanation": "Commit records changes at a point in the project's history."
   },
   "ce-16": {
-    "prompt": "In CI/CD, continuous delivery means that:",
+    "prompt": "In CI/CD, continuous delivery assumes:",
     "options": [
-      "The software is always ready for deployment after automated validations.",
-      "Every change is published to production without testing.",
-      "Versioning is no longer necessary.",
-      "The database is erased with each build.",
-      "The team doesn't need to review code."
+      "Software frequently validated and ready for reliable deployment.",
+      "Automatic publishing to production without testing.",
+      "Lack of version control.",
+      "Code review elimination.",
+      "Manual backup as the only quality step."
     ],
-    "explanation": "Continuous delivery keeps the product ready for reliable deployment, typically after automated testing."
+    "explanation": "Continuous delivery keeps the software in a deployable condition after validations."
   },
   "ce-17": {
-    "prompt": "In a REST API, the HTTP method typically used to retrieve a resource is:",
+    "prompt": "In a REST API, the HTTP method most associated with fully updating a resource is:",
     "options": [
       "GET.",
-      "POST.",
       "FUCK.",
-      "PATCH.",
-      "DELETE."
+      "DELETE.",
+      "OPTIONS.",
+      "TRACE."
     ],
-    "explanation": "GET is used for reading/retrieving resources in HTTP APIs."
+    "explanation": "PUT is typically used for full resource replacement/update."
   },
   "ce-18": {
-    "prompt": "In information security, multi-factor authentication combines:",
+    "prompt": "Multi-factor authentication is best characterized by:",
     "options": [
-      "Two or more factors, such as something the user knows, has, or is.",
-      "Two same passwords on different systems.",
-      "Two browsers on the same computer.",
-      "Two public copies of the password.",
-      "Two unencrypted databases."
+      "Combining independent factors, such as something the user knows, has, or is.",
+      "Require two identical passwords on different systems.",
+      "Allow login without identification.",
+      "Only use captcha as functional identification.",
+      "Share token between users in the same industry."
     ],
-    "explanation": "MFA increases security by requiring independent verification factors."
+    "explanation": "MFA combines different factors to reduce the risk of compromise."
   },
   "ce-19": {
-    "prompt": "In incident response, which step comes immediately after identifying and confirming a relevant incident?",
+    "prompt": "In response to security incidents, after identifying and confirming the incident, a priority action is usually:",
     "options": [
       "Containment to limit impact and spread.",
+      "Immediate deletion of evidence.",
       "Public disclosure of all technical details.",
-      "Disposal of evidence.",
-      "Permanent deactivation of all services.",
-      "Deleting backups."
+      "Permanently disable all backups.",
+      "Reinstallation without preserving logs."
     ],
-    "explanation": "After confirmation, containment seeks to limit damage before eradication and recovery."
+    "explanation": "Containment limits damage before eradication and recovery."
   },
   "ce-20": {
-    "prompt": "An IT service catalog aims to:",
+    "prompt": "An IT service catalog must present:",
     "options": [
-      "Present available services, expected levels and request channels.",
-      "Store user passwords in open text.",
-      "Replace all administrative contracts.",
-      "Block any remote service.",
-      "Eliminate the need for user support."
+      "Available services, expected levels, request channels and responsibilities.",
+      "Administrative system passwords.",
+      "Personal preferences of the technical team.",
+      "Supplier names only.",
+      "Public list of unaddressed vulnerabilities."
     ],
-    "explanation": "The catalog organizes the offer of IT services and improves communication with users."
+    "explanation": "Catalog organizes the offer of services and service expectations."
   },
   "ce-21": {
-    "prompt": "In interoperability of educational systems, a central concern is:",
+    "prompt": "In interoperability of educational systems, the following are central concerns:",
     "options": [
-      "Standardized and secure data exchange between platforms.",
-      "Prevent any integration between systems.",
-      "Use only printed files.",
-      "Exchange personal data without a legal basis.",
-      "Delete user authentication."
+      "Standardized, secure and legally appropriate exchange of data between platforms.",
+      "Prevent any integration.",
+      "Share sensitive data via public links.",
+      "Eliminate authentication to facilitate access.",
+      "Replace databases with local spreadsheets."
     ],
-    "explanation": "Interoperability requires technical standards, security and legal compliance when sharing data."
+    "explanation": "Interoperability requires standards, security, governance and legal adherence."
   },
   "ce-22": {
-    "prompt": "When preparing IT technical specifications for public procurement, it is most appropriate:",
+    "prompt": "In the technical specification for hiring an IT solution, it is recommended to define:",
     "options": [
-      "Define functional, non-functional requirements, acceptance criteria and relevant restrictions.",
-      "Indicate specific product without technical justification.",
-      "Omit measurement criteria.",
-      "Delegate the full definition to the contracted supplier.",
-      "Describe only personal team preferences."
+      "Functional, non-functional requirements, acceptance criteria and execution conditions.",
+      "Specific brand without justification.",
+      "Just visual preference of the team.",
+      "Lack of metrics to facilitate hiring.",
+      "Execution without supervision by the contractor."
     ],
-    "explanation": "Good specifications make clear requirements, acceptance criteria, quality and execution conditions."
+    "explanation": "Good specification reduces ambiguity and supports oversight/acceptance."
   },
   "ce-23": {
     "prompt": "In data science, overfitting occurs when a model:",
     "options": [
       "It overfits training data and generalizes poorly to new data.",
-      "It never learns patterns from the data.",
-      "It is trained without any variables.",
-      "Performs backup operations only.",
-      "Automatically encrypts the bank."
+      "Does not use any input variables.",
+      "Automatically encrypts the base.",
+      "Performs incremental backup only.",
+      "Eliminates noise by default."
     ],
-    "explanation": "Overfitting reduces generalization capacity because the model captures training noise or particularities."
+    "explanation": "Overfitting captures noise or particularities of the workout."
   },
   "ce-24": {
-    "prompt": "In IoT in the public sector, an essential cybersecurity measure is:",
+    "prompt": "In IoT in the public sector, an essential security measure is:",
     "options": [
-      "Manage credentials, update firmware and segment networks.",
-      "Maintain factory default passwords.",
-      "Connect critical sensors directly to the public network without control.",
-      "Disable access logs.",
-      "Only use communication without authentication."
+      "Change default credentials, update firmware, and segment the network.",
+      "Keep the factory password to facilitate support.",
+      "Connect critical sensors directly to the internet.",
+      "Disable logs to reduce storage.",
+      "Allow communication without authentication."
     ],
-    "explanation": "IoT devices require hardening, updating, authentication, and segmentation to reduce exposure."
+    "explanation": "IoT requires hardening, updating and segmenting."
   },
   "ce-25": {
-    "prompt": "For compliance with the LGPD in educational information systems, it is recommended:",
+    "prompt": "For compliance with the LGPD in an educational system, it is most appropriate:",
     "options": [
-      "Apply access control, defined purpose, data minimization and operations recording.",
-      "Give unrestricted access to all student data.",
-      "Collect data without a specific purpose.",
-      "Maintain bases without traceability.",
-      "Share sensitive data via public links."
+      "Apply access control, purpose, minimization, registration and security in processing.",
+      "Release all data to any server.",
+      "Collect data without a defined purpose.",
+      "Use public links for reports with personal data.",
+      "Eliminate traceability to simplify operations."
     ],
-    "explanation": "Educational systems process sensitive personal data and must apply technical controls, purpose and traceability."
+    "explanation": "Educational systems process personal data and require technical and legal controls."
+  },
+  "ce-26": {
+    "prompt": "In Linux, the command used to query manual pages for other commands is:",
+    "options": [
+      "helpall.",
+      "guide.",
+      "man.",
+      "docx.",
+      "manualize."
+    ],
+    "explanation": "The man command accesses man pages on Unix/Linux systems."
+  },
+  "ce-27": {
+    "prompt": "On PowerShell, execution policies are used to:",
+    "options": [
+      "Control conditions under which scripts can be executed.",
+      "Set adapter IP addresses.",
+      "Create indexes on SQL tables.",
+      "Manage browser users only.",
+      "Replace antivirus with firewall."
+    ],
+    "explanation": "Execution policies regulate script execution in PowerShell."
+  },
+  "ce-28": {
+    "prompt": "A zero-day vulnerability is:",
+    "options": [
+      "Fault not yet known to be corrected by the supplier at the time of its exploration or disclosure.",
+      "Error corrected many years ago.",
+      "Attack that lasts exactly 24 hours.",
+      "Backup created on the first day of the month.",
+      "Password that expires daily."
+    ],
+    "explanation": "Zero-day involves an unknown failure or no fix available."
+  },
+  "ce-29": {
+    "prompt": "In databases, an index tends to:",
+    "options": [
+      "Speed up read queries on indexed columns, with additional cost in writing and storage.",
+      "Eliminate need for modeling.",
+      "Ensure complete encryption.",
+      "Prevent any deadlock.",
+      "Replace transactions."
+    ],
+    "explanation": "Indexes improve searches, but have maintenance costs."
+  },
+  "ce-30": {
+    "prompt": "Hashing is useful, for example, for:",
+    "options": [
+      "Verify integrity, index structures, and store passwords by appropriate cryptographic digest.",
+      "Revert passwords to clear text.",
+      "Physically increase RAM memory.",
+      "Replace authentication with spreadsheets.",
+      "Create IP address automatically."
+    ],
+    "explanation": "Hashing produces summary; in password security should be used with proper algorithms and salt."
   },
   "m-cg-01": {
-    "prompt": "According to Errata nº 01 of Notice 793/SED/2026, how was the distribution of the Objective Test for Teachers?",
+    "prompt": "According to Errata nº 01 of Notice 793/SED/2026, the objective test for Professor now consists of:",
     "options": [
       "10 questions on General Knowledge, 10 on Teaching Practice Methodology and 20 on Specific Knowledge.",
-      "10 questions in Portuguese, 10 in IT and 20 in Mathematics.",
-      "20 questions on General Knowledge and 20 on Computer Science.",
-      "40 questions exclusively on Specific Knowledge.",
-      "10 questions on Legislation, 10 on Libras, 10 on AEE and 10 on IT."
+      "10 IT questions, 10 Legislation questions and 20 Portuguese questions.",
+      "20 General Knowledge questions and 20 Titles questions.",
+      "40 questions on Specific Knowledge only.",
+      "5 questions from each subject provided for in the notice."
     ],
-    "explanation": "For Teachers, the errata organizes the test into 10 general questions, 10 methodology questions and 20 specific questions."
+    "explanation": "For Professor, the rectified distribution is 10 + 10 + 20."
   },
   "m-cg-02": {
-    "prompt": "What is the minimum grade expected to pass the Objective Test?",
+    "prompt": "The minimum score to pass the objective test, according to the general rule of the notice, is:",
     "options": [
-      "4.00 points.",
-      "5.00 points.",
-      "6.00 points.",
-      "7.50 points.",
-      "Only presence on the day of the test."
+      "5.00.",
+      "6.00.",
+      "7.00.",
+      "8.00.",
+      "Only classification within the number of vacancies."
     ],
-    "explanation": "The notice requires a minimum score of 6.00 points in the Objective Test."
+    "explanation": "The notice requires a minimum grade of 6.00."
   },
   "m-cg-03": {
-    "prompt": "In the tiebreaker for Teacher, after the legal age rule when applicable, which criterion appears first?",
+    "prompt": "In the tiebreaker criteria for Professor, after applicable legal hypotheses, Errata nº 01 prioritizes:",
     "options": [
-      "Greater number of correct answers in Specific Knowledge.",
-      "Higher number of correct answers in General Knowledge.",
-      "Highest score in Teaching Practice Methodology.",
-      "Longer registration time for the competition.",
-      "Alphabetical order."
+      "Higher score in Specific Knowledge.",
+      "Older age in any situation.",
+      "Greater number of titles before the objective test.",
+      "Registration order.",
+      "Public draw as the first criterion."
     ],
-    "explanation": "The errata prioritizes Specific Knowledge in the tiebreaker, followed by Methodology and General Knowledge."
+    "explanation": "Specific Knowledge appears before Methodology and General Knowledge."
   },
   "m-cg-04": {
-    "prompt": "An essential role of a public school teacher is:",
+    "prompt": "In relation to the LGPD in the school context, select the correct alternative:",
     "options": [
-      "Plan, teach classes, evaluate learning and participate in the school's educational activities.",
-      "Perform only administrative tasks without contact with students.",
-      "Replace the political-pedagogical project with individual decisions.",
-      "Apply external assessments without pedagogical analysis.",
-      "Define the standards of the state education system alone."
+      "Reports from students with disabilities can be disseminated in open groups if there is a pedagogical purpose.",
+      "Personal data must be treated with purpose, necessity, security and respect for confidentiality.",
+      "The school can collect any data preventively, without purpose.",
+      "Data from children and adolescents do not require additional caution.",
+      "The LGPD prevents all processing of educational data."
     ],
-    "explanation": "The teaching role involves planning, teaching, assessment and participation in school pedagogical life."
+    "explanation": "Processing of educational data must comply with purpose, necessity, security and confidentiality."
   },
   "m-cg-05": {
-    "prompt": "The General Data Protection Law is especially relevant at school because:",
+    "prompt": "Educational indicators such as dropout, failure and age-grade distortion should be used to:",
     "options": [
-      "Authorizes the public disclosure of student data without purpose.",
-      "No need to be careful with data on children and adolescents.",
-      "It requires purpose, security and necessity in the processing of personal data.",
-      "Allows you to share reports and reports in open groups.",
-      "It replaces the duty of professional secrecy."
+      "Plan evidence-based pedagogical and management interventions.",
+      "Punish low-performing students.",
+      "Replace teaching planning.",
+      "Prevent analysis of inequalities.",
+      "Set automatic approval."
     ],
-    "explanation": "Educational and health/disability data require processing with purpose, minimization, security and confidentiality."
+    "explanation": "Indicators support diagnosis and planning."
   },
   "m-cg-06": {
-    "prompt": "The State Education Plan guides public educational management mainly through:",
+    "prompt": "Fundeb is related:",
     "options": [
-      "Goals and strategies to expand access, quality, inclusion and appreciation of education.",
-      "Foreign trade rules for schools.",
-      "Exclusively accounting standards for private companies.",
-      "Criteria for replacing the curriculum with free courses.",
-      "Prohibition of institutional evaluation."
+      "To the financing of public basic education and appreciation of education professionals.",
+      "Only for private higher education.",
+      "Exclusively for the purchase of hospital equipment.",
+      "Only for institutional advertising.",
+      "The replacement of school management by companies."
     ],
-    "explanation": "Education plans structure goals and strategies for public educational policies."
+    "explanation": "Fundeb finances public basic education."
   },
   "m-cg-07": {
-    "prompt": "Indicators such as approval, failure, abandonment and age-grade distortion help the school to:",
+    "prompt": "Register V or F: (__) Public transparency coexists with the protection of personal data. (__) Communication with families must be clear and accessible. (__) All pedagogical data is public and unrestricted. (__) Professional secrecy may be necessary for sensitive information. The correct sequence is:",
     "options": [
-      "Produce diagnoses and plan pedagogical interventions.",
-      "Classify students definitively.",
-      "Dispensing with individual monitoring.",
-      "Eliminate the need for planning.",
-      "Replace teaching work with ranking."
+      "V - V - F - V.",
+      "V - F - V - F.",
+      "F - V - F - V.",
+      "V - V - V - F.",
+      "F - F - V - V."
     ],
-    "explanation": "Indicators are instruments for reading reality and should guide pedagogical and management actions."
+    "explanation": "Transparency does not authorize undue exposure of personal or sensitive data."
   },
   "m-cg-08": {
-    "prompt": "Fundeb is related to the financing of:",
+    "prompt": "The Political-Pedagogical Project is related to democratic management because:",
     "options": [
-      "Maintenance and development of public basic education and appreciation of education professionals.",
-      "Exclusively road works.",
-      "Private universities only.",
-      "Health programs unrelated to education.",
-      "Unlimited institutional advertising."
+      "Expresses collective decisions about the school's identity, objectives and practices.",
+      "It is an exclusive management document, without community participation.",
+      "Replaces the system's educational standards.",
+      "It is only used to register school parties.",
+      "Eliminates the need for teaching planning."
     ],
-    "explanation": "Fundeb is the central financing mechanism for public basic education."
+    "explanation": "The PPP must be built collectively and guide school practice."
   },
   "m-cg-09": {
-    "prompt": "When communicating with families and students, civic language means:",
+    "prompt": "When serving the public, citizen language means:",
     "options": [
-      "Using technical terms without explanation.",
-      "Communicate with clarity, respect, objectivity and accessibility.",
-      "Hide relevant school information.",
-      "Respond only to internal acronyms.",
-      "Avoid formal records."
+      "Clarity, objectivity, respect and accessibility in communication.",
+      "Predominant use of internal acronyms.",
+      "Vague answers to avoid liability.",
+      "Verbal communication only.",
+      "Demand for technical terms by families."
     ],
-    "explanation": "Citizen language brings public service closer to the population and facilitates understanding and participation."
+    "explanation": "Citizen language facilitates understanding and access to rights."
   },
   "m-cg-10": {
-    "prompt": "The principle of impersonality in Public Administration requires that the public servant:",
+    "prompt": "In inclusive public policy, intersectoral coordination means:",
     "options": [
-      "Act in accordance with the public interest, without personal favoritism or persecution.",
-      "Choose students by personal preference.",
-      "Ignore school collective norms.",
-      "Prioritize private interests in public decisions.",
-      "Disclose personal data by affinity."
+      "Responsible dialogue between school, family and services when necessary, preserving roles and confidentiality.",
+      "Transfer all pedagogical responsibility to health.",
+      "Eliminate family participation.",
+      "Replace curriculum with clinical care.",
+      "Share reports without control."
     ],
-    "explanation": "Impersonality prevents favoritism and guides public action based on objective criteria."
-  },
-  "m-cg-11": {
-    "prompt": "In an inclusive public policy, intersectoral coordination means:",
-    "options": [
-      "The school operates in isolation, without contact with health, assistance or family.",
-      "Integrate education, family and other services when necessary, respecting confidentiality and responsibilities.",
-      "Transfer pedagogical responsibility only to the family.",
-      "Replace the curriculum with clinical care.",
-      "Allow unrestricted access to sensitive documents."
-    ],
-    "explanation": "Inclusion may require dialogue between sectors, but without abandoning the school's pedagogical role or violating confidentiality."
-  },
-  "m-cg-12": {
-    "prompt": "Active transparency in the public service consists of:",
-    "options": [
-      "Disclose public information of collective interest regardless of request.",
-      "Respond only when there is legal proceedings.",
-      "Keep all actions in permanent secrecy.",
-      "Require justification for any public information.",
-      "Send students' personal data to third parties."
-    ],
-    "explanation": "Active transparency is the spontaneous publication of public information, preserving legal secrecy."
+    "explanation": "Intersectorality does not eliminate the school’s pedagogical role nor the duty of secrecy."
   },
   "m-md-01": {
-    "prompt": "From the socio-interactionist perspective, learning is favored when the teacher:",
+    "prompt": "A diagnostic assessment is most appropriate when the teacher wants to:",
     "options": [
-      "Mediates interactions, proposes challenges and considers students’ prior knowledge.",
-      "Eliminates student participation.",
-      "Focuses only on rote memorization without context.",
-      "Evaluated only at the end of the year.",
-      "Avoid any collaborative work."
+      "Identify prior knowledge and difficulties in planning interventions.",
+      "Assign a final grade without feedback.",
+      "Classify students without replanning.",
+      "Replace all formative assessment.",
+      "Prevent planning review."
     ],
-    "explanation": "Teacher mediation and social interaction are central to meaningful learning from this perspective."
+    "explanation": "Diagnosis guides planning and intervention."
   },
   "m-md-02": {
-    "prompt": "A good lesson plan should mainly contain:",
-    "options": [
-      "Objectives, content, strategies, resources, evaluation and possible adaptations.",
-      "Just a list of exercises, no goals.",
-      "Only the name of the teacher.",
-      "A fixed itinerary that cannot be adjusted.",
-      "Just the final grade of the class."
-    ],
-    "explanation": "Planning is intentionally organizing objectives, paths, resources and forms of monitoring."
-  },
-  "m-md-03": {
-    "prompt": "The school’s Political-Pedagogical Project should be understood as:",
-    "options": [
-      "Collective document that guides identity, goals, practices and pedagogical organization.",
-      "Secret management document.",
-      "Individual plan for each student.",
-      "Substitute register of education legislation.",
-      "Festival calendar with no pedagogical relationship."
-    ],
-    "explanation": "The PPP expresses collective decisions about the social function, organization and practices of the school."
-  },
-  "m-md-04": {
     "prompt": "Formative assessment is characterized by:",
     "options": [
-      "Monitor the learning process and guide interventions along the way.",
-      "Only classify students at the end of the period.",
-      "Eliminate returns to students.",
-      "Only be applied to external tests.",
-      "Dispense with pedagogical records."
+      "Monitor the process, offer feedback and guide pedagogical adjustments.",
+      "Only occur at the end of the school year.",
+      "Just be qualifying.",
+      "Dismiss records.",
+      "Have an exclusively punitive function."
     ],
-    "explanation": "Formative assessment monitors, returns information and supports continuous pedagogical adjustments."
+    "explanation": "Formative assessment accompanies and regulates the process."
   },
-  "m-md-05": {
+  "m-md-03": {
     "prompt": "Universal Design for Learning proposes:",
     "options": [
-      "Multiple forms of engagement, representation and expression of learning.",
-      "A single way of teaching for everyone.",
-      "Remove curricular objectives from students with disabilities.",
-      "Replace teaching mediation with technology.",
-      "Always apply the same test without adaptations."
+      "Multiple means of engagement, representation, action and expression.",
+      "A single way of teaching and evaluating.",
+      "Removal of curricular objectives.",
+      "Mandatory use of digital technology only.",
+      "Permanent separation of students with disabilities."
     ],
-    "explanation": "DUA seeks to reduce barriers by offering different means to access, participate and demonstrate learning."
+    "explanation": "DUA seeks to reduce barriers through different forms of access and expression."
+  },
+  "m-md-04": {
+    "prompt": "Regarding curriculum adaptation, analyze: I. It must reduce barriers to accessing the curriculum. II. It may involve resources, time, language and form of response. III. You should always eliminate learning objectives. That's correct:",
+    "options": [
+      "I and II only.",
+      "I and III only.",
+      "II and III only.",
+      "III, only.",
+      "I, II and III."
+    ],
+    "explanation": "Adaptation does not mean automatically eliminating objectives."
+  },
+  "m-md-05": {
+    "prompt": "Active methodologies are consistent with practices in which the student:",
+    "options": [
+      "Investigate, participate, collaborate and reflect with teaching mediation.",
+      "Just copy content without interaction.",
+      "Does not receive clear objectives.",
+      "Works without supervision.",
+      "It is evaluated only by final memorization."
+    ],
+    "explanation": "Active methodologies require protagonism with pedagogical intentionality."
   },
   "m-md-06": {
-    "prompt": "Active methodologies are best represented by practices that:",
+    "prompt": "An assessment rubric contributes to:",
     "options": [
-      "They place the student in investigative, collaborative and reflective participation.",
-      "They demand absolute silence and permanent copy.",
-      "They do not require learning objectives.",
-      "Prevent group work.",
-      "They transform the teacher into a mere spectator without intervention."
+      "Explain criteria and expected performance levels.",
+      "Hide correction criteria.",
+      "Delete feedback.",
+      "Evaluate only frequency.",
+      "Prevent self-assessment."
     ],
-    "explanation": "Active methodologies increase student protagonism with clear pedagogical mediation."
+    "explanation": "Rubrics promote clarity, feedback, and follow-up."
   },
   "m-md-07": {
-    "prompt": "A suitable curricular adaptation for inclusion should:",
+    "prompt": "In cooperative learning, important elements are:",
     "options": [
-      "Reduce barriers to accessing the curriculum without excluding students from class experiences.",
-      "Remove the student from the common room whenever there is difficulty.",
-      "Eliminate any expectation of learning.",
-      "Be defined without dialogue with teachers and family.",
-      "Prevent use of assistive technology."
+      "Positive interdependence and individual responsibility.",
+      "Permanent competition without collaboration.",
+      "Group without common goal.",
+      "Absence of mediation.",
+      "A student performing the entire task."
     ],
-    "explanation": "Adaptations must guarantee participation and learning, preserving links with the curriculum and the class."
+    "explanation": "Cooperation requires common goals and individual responsibility."
   },
   "m-md-08": {
-    "prompt": "Parallel recovery means:",
+    "prompt": "Parallel recovery should be understood as:",
     "options": [
-      "Interventions during the process to overcome learning difficulties.",
-      "Only new test at the end of the year.",
-      "Punishment for those who didn't learn.",
-      "Exemption from school attendance.",
-      "Activity unrelated to diagnosis."
+      "Intervention during the process, linked to the diagnosis of difficulties.",
+      "New test without reteaching.",
+      "Disciplinary punishment.",
+      "Frequency exemption.",
+      "Activity unrelated to objectives."
     ],
-    "explanation": "Recovery must happen along the way, based on diagnosis and replanning."
+    "explanation": "Parallel recovery occurs throughout the learning process."
   },
   "m-md-09": {
-    "prompt": "The pedagogical use of external assessments should serve to:",
+    "prompt": "The pedagogical use of external assessments should:",
     "options": [
-      "Read evidence, identify inequalities and plan actions, without reducing the curriculum to testing.",
-      "Automatically punish low-performing students.",
+      "Support evidence reading without reducing the curriculum to the test.",
       "Replace all school assessments.",
-      "Ignore the social and pedagogical context.",
-      "Cancel teaching planning."
+      "Serve only to rank students.",
+      "Dismiss contextual analysis.",
+      "Eliminate teaching planning."
     ],
-    "explanation": "External assessments can guide decisions, but they should not impoverish the curriculum or replace school assessment."
+    "explanation": "External assessments are management and planning inputs, not a single curriculum."
   },
   "m-md-10": {
-    "prompt": "Cooperative learning presupposes:",
+    "prompt": "Inclusive room management involves:",
     "options": [
-      "Positive interdependence, individual responsibility and interaction between students.",
-      "Permanent competition without collaboration.",
-      "Group work without a common goal.",
-      "A student doing everything alone.",
-      "Lack of teaching mediation."
+      "Clear routines, respectful bonds, mediation and participation of all.",
+      "Isolation of students who require support.",
+      "Absence of combinations.",
+      "Disciplinary control without pedagogical dimension.",
+      "Strict standardization without considering barriers."
     ],
-    "explanation": "In cooperation, the group learns together, but each student also maintains responsibility for the process."
-  },
-  "m-md-11": {
-    "prompt": "In a heterogeneous class, pedagogical differentiation means:",
-    "options": [
-      "Vary strategies, resources and forms of expression to meet needs without unduly lowering expectations.",
-      "Definitely separate students by performance.",
-      "Give the same task in the same way to everyone every time.",
-      "Eliminate goals for students who need support.",
-      "Assess only with a standardized written test."
-    ],
-    "explanation": "Differentiating means adjusting paths and supports while maintaining a commitment to learning and participation."
-  },
-  "m-md-12": {
-    "prompt": "An assessment rubric is useful because:",
-    "options": [
-      "Explains criteria and expected performance levels.",
-      "Hides correction criteria.",
-      "It is only used to calculate frequency.",
-      "It replaces all teacher feedback.",
-      "Prevents self-evaluation."
-    ],
-    "explanation": "Rubrics make criteria clearer and encourage feedback, self-assessment and monitoring."
-  },
-  "m-md-13": {
-    "prompt": "Inclusive classroom management requires the teacher to:",
-    "options": [
-      "Clear routines, respectful bonds, conflict mediation and everyone’s participation.",
-      "Rigid standardization that ignores specific needs.",
-      "Isolation of students with disabilities.",
-      "Absence of collective agreements.",
-      "Focus only on disciplinary control."
-    ],
-    "explanation": "Inclusive environments combine organization, welcoming, clear expectations and participation."
+    "explanation": "Inclusive environments articulate organization, welcoming and participation."
   },
   "m-aee-01": {
-    "prompt": "In special education policy, AEE's target audience mainly includes students with:",
+    "prompt": "According to the perspective of inclusive education, AEE’s main purpose is to:",
     "options": [
-      "Disability, autism spectrum disorder and high abilities/giftedness.",
-      "Only temporary study difficulties.",
-      "Any student who has a low grade.",
-      "Only students without enrollment in the common class.",
-      "Exclusively adult students."
+      "Complement or supplement the student's training, favoring access, participation and learning.",
+      "Completely replace schooling in the common classroom.",
+      "Act only as reinforcement of Portuguese Language and Mathematics.",
+      "Evaluate the performance of common room teachers.",
+      "Only serve students without regular enrollment."
     ],
-    "explanation": "Special education legislation focuses on disabilities, ASD and high abilities/giftedness as the target audience."
+    "explanation": "AEE complements or supplements, not replaces, common schooling."
   },
   "m-aee-02": {
-    "prompt": "The Individual Development Plan must:",
+    "prompt": "According to Resolution CEE/SC nº 100/2016, the Special Education audience includes:",
     "options": [
-      "Record assessment, objectives, strategies, resources, responsibilities and student monitoring.",
-      "Be a generic list that is the same for everyone.",
-      "Replace the class curriculum.",
-      "Only be done at the end of the year.",
-      "Left without review after drafting."
+      "Disability, ASD, ADHD and high abilities/giftedness, according to state forecast.",
+      "Only physical and intellectual disabilities.",
+      "Only students with a medical report of visual impairment.",
+      "All students with low academic performance.",
+      "Exclusively adult students."
     ],
-    "explanation": "The PDI guides individualized intervention and needs to be continuously monitored and adjusted."
+    "explanation": "The Santa Catarina regulations include disabilities, ASD, ADHD and AH/SD."
   },
   "m-aee-03": {
-    "prompt": "The functional assessment in AEE seeks to identify:",
+    "prompt": "Regarding the PDI, analyze: I. It must record evaluation, objectives, strategies, resources and monitoring. II. It is a living document, subject to monitoring and adjustments. III. It is mandatory only for intellectual disabilities. That's correct:",
     "options": [
-      "Barriers, potential, forms of communication, autonomy and support needs.",
-      "Only the student's final grade.",
-      "The medical cause as the only relevant data.",
-      "The definitive classification to exclude from the common class.",
-      "The opinion of a single person without observation."
+      "I and II only.",
+      "I and III only.",
+      "II and III only.",
+      "III, only.",
+      "I, II and III."
     ],
-    "explanation": "Functional assessment is pedagogical and contextual, focused on supports, barriers and participation."
+    "explanation": "PDI is not restricted to intellectual disability and must be monitored."
   },
   "m-aee-04": {
-    "prompt": "Assistive technology can be defined as:",
+    "prompt": "The functional assessment in AEE mainly seeks to identify:",
     "options": [
-      "Resources and services that expand functionality, autonomy, communication and participation.",
-      "Only high-cost computers.",
-      "Any activity without a pedagogical objective.",
-      "Material used to replace the teacher.",
-      "Resource prohibited in common room."
+      "Barriers, potential, communication, autonomy and necessary support.",
+      "Only final grade in written assessments.",
+      "Clinical diagnosis as the only relevant data.",
+      "Criteria for excluding the student from the common class.",
+      "Comparative ranking between students."
     ],
-    "explanation": "Assistive technology brings together simple or complex solutions to reduce barriers and increase participation."
+    "explanation": "Functional assessment is contextual and oriented towards pedagogical support."
   },
   "m-aee-05": {
-    "prompt": "Augmentative and alternative communication is indicated when:",
+    "prompt": "Assistive Technology comprises:",
     "options": [
-      "The student needs support to express themselves or understand through means beyond conventional oral speech.",
-      "The student already fully masters all written genres.",
-      "The school wants to prevent social interaction.",
-      "The objective is to remove curricular content.",
-      "There is no need for family or team participation."
+      "Resources, services and strategies that promote autonomy, functionality and participation.",
+      "Only high-cost electronic equipment.",
+      "Any technology used by the teacher, even without barriers.",
+      "Replacement of teaching work.",
+      "Material prohibited in common room."
     ],
-    "explanation": "CAA expands communicative possibilities with images, symbols, boards, gestures, devices and other resources."
+    "explanation": "TA can be simple or complex and aims to reduce barriers."
   },
   "m-aee-06": {
-    "prompt": "When assisting students with visual impairments, an adequate set of supports may include:",
+    "prompt": "Augmentative and alternative communication is indicated for:",
     "options": [
-      "Braille, orientation and mobility, tactile materials, audio description and accessible digital resources.",
-      "Only copy the table in small print.",
-      "Prohibition of participation in practical activities.",
-      "Exclusive use of images without description.",
-      "Only oral assessment for all content."
+      "Expand possibilities of expression and understanding when conventional speech or writing is not enough.",
+      "Eliminate social interaction.",
+      "Replace all resumes with images.",
+      "Prevent use of Libras.",
+      "Standardize communication for all students."
     ],
-    "explanation": "Visual accessibility combines tactile, sound, digital resources and pedagogical strategies."
+    "explanation": "CAA expands communication through symbols, boards, gestures, devices and other forms."
   },
   "m-aee-07": {
-    "prompt": "For students with ASD, a frequently useful pedagogical practice is:",
+    "prompt": "For students with visual impairments, the following are coherent resources:",
     "options": [
-      "Organize predictable routines, visual supports and clear communication, with individual flexibility.",
-      "Apply sudden changes without anticipation.",
-      "Remove all social interactions from your routine.",
-      "Use punishment as the main strategy.",
-      "Ignoring interests and sensory sensitivities."
+      "Braille, tactile materials, audio description, orientation and mobility and accessible digital resources.",
+      "Image without description and reduced font.",
+      "Only oral exam for any content.",
+      "Exclusion of practical activities.",
+      "Mandatory use of video without audio."
     ],
-    "explanation": "Predictability, visual supports and objective communication can reduce barriers and encourage participation."
+    "explanation": "Visual accessibility combines tactile, sound and digital resources."
   },
   "m-aee-08": {
-    "prompt": "In deafblindness, educational intervention tends to require:",
+    "prompt": "For students with ASD, a frequently appropriate strategy is:",
     "options": [
-      "Multisensory strategies, individualized communication and coordinated work with the team.",
-      "Only distant oral explanation.",
-      "Exclusively visual material without adaptation.",
-      "Lack of communicative mediation.",
-      "Standardized assessment without support."
+      "Predictable routine, visual support, clear communication and anticipation of changes.",
+      "Sudden changes without mediation.",
+      "Lack of interaction with peers.",
+      "Punishment as the main strategy.",
+      "Disregard for sensory sensitivities."
     ],
-    "explanation": "Deafblindness requires very individualized communicative and sensory planning."
+    "explanation": "Predictability and clear communication reduce barriers for many students with ASD."
   },
   "m-aee-09": {
-    "prompt": "The AEE teacher must act in relation to the common room in such a way as to:",
+    "prompt": "In high abilities/giftedness, an appropriate pedagogical intervention is:",
     "options": [
-      "Articulated, collaborating with teachers to reduce barriers and support access to the curriculum.",
-      "Isolated, without communication with the teaching team.",
-      "Substitute, taking over all classes in the class.",
-      "Clinical, without pedagogical objectives.",
-      "Administrative only."
+      "Curriculum enrichment, investigative projects and challenges compatible with interests.",
+      "Reduced opportunities to match performance.",
+      "Repetitive tasks as the only strategy.",
+      "Preventing participation in projects.",
+      "Ignore potential indicators."
     ],
-    "explanation": "AEE complements or supplements schooling and needs to dialogue with the common room."
+    "explanation": "AH/SD demands enrichment, deepening and stimulating investigation."
   },
   "m-aee-10": {
-    "prompt": "For high abilities/giftedness, a suitable strategy is:",
+    "prompt": "Coordination between the AEE teacher and the regular class teacher must occur to:",
     "options": [
-      "Curriculum enrichment, research, projects and challenges compatible with interests and potential.",
-      "Reduce learning opportunities to equalize the class.",
-      "Ignoring specific student interests.",
-      "Apply only repetitive tasks.",
-      "Prevent participation in projects."
+      "Plan support, eliminate barriers and promote access to the curriculum.",
+      "Transfer all responsibility to AEE.",
+      "Prevent adaptation in the common room.",
+      "Permanently separate the student.",
+      "Perform frequency control only."
     ],
-    "explanation": "Curricular enrichment increases depth, complexity and autonomy in learning."
+    "explanation": "Collaboration is essential for inclusion."
   },
   "m-aee-11": {
-    "prompt": "The Brazilian Inclusion Law reinforces that the education of people with disabilities must occur:",
+    "prompt": "Record V/F on AEE: (__) It is complementary or supplementary in nature. (__) Must replace the common class. (__) Can be offered in a multifunctional resource room. (__) No coordination with the pedagogical team. Correct sequence:",
     "options": [
-      "In an inclusive educational system, with accessibility, support and participation in equal opportunities.",
-      "Only in segregated institutions.",
-      "No reasonable accommodations.",
-      "With registration subject to the existence of a perfect report.",
-      "Outside the regular system whenever support is needed."
+      "V - F - V - F.",
+      "V - V - F - F.",
+      "F - V - V - F.",
+      "V - F - F - V.",
+      "F - F - V - V."
     ],
-    "explanation": "The LBI consolidates the right to inclusive education and the support necessary for participation."
+    "explanation": "AEE does not replace common classes and requires articulation."
   },
   "m-aee-12": {
-    "prompt": "Assessment adjustments for special education target students must:",
+    "prompt": "Regarding evidence-based practices for students with ASD, the most appropriate alternative is:",
     "options": [
-      "Maintain focus on learning objectives, offering resources, time or accessible forms of response.",
-      "Eliminate any pedagogical criteria.",
-      "Always be the same for all students.",
-      "Prevent demonstration of learning by alternative means.",
-      "Serve to automatically approve."
+      "Select interventions considering evidence, context, individuality and monitoring results.",
+      "Always apply the same technique to everyone.",
+      "Ignore tracking data.",
+      "Replace pedagogical planning with informal opinion.",
+      "Use only intervention without school participation."
     ],
-    "explanation": "Assessment adjustments remove barriers without abandoning pedagogical objectives and real monitoring."
+    "explanation": "EBP requires evidence, appropriateness to context, and monitoring."
   },
   "m-aee-13": {
-    "prompt": "PDI monitoring must occur to:",
+    "prompt": "Assessment adjustments must:",
     "options": [
-      "Check progress, record evidence and adjust strategies when necessary.",
-      "Archive the document without further analysis.",
-      "Compare students by ranking.",
-      "Replace pedagogical meetings.",
-      "Dismiss dialogue with the family."
+      "Maintain focus on objectives and allow accessible ways to demonstrate learning.",
+      "Ensure automatic approval.",
+      "Delete any criteria.",
+      "Be identical for everyone always.",
+      "Prevent use of accessibility features."
     ],
-    "explanation": "The PDI is alive: it needs records, evidence analysis and replanning."
+    "explanation": "Adaptations remove barriers without abandoning pedagogical objectives."
+  },
+  "m-aee-14": {
+    "prompt": "In deafblindness, intervention tends to require:",
+    "options": [
+      "Multisensory strategies, individualized communication and articulated work.",
+      "Distant oral exposure only.",
+      "Exclusively visual material without adaptation.",
+      "Lack of communicative mediation.",
+      "Unsupported standardized assessment."
+    ],
+    "explanation": "Deafblindness requires individualized sensory and communicative planning."
+  },
+  "m-aee-15": {
+    "prompt": "The Brazilian Inclusion Law reinforces the right to education:",
+    "options": [
+      "In an inclusive educational system, with accessibility and necessary support.",
+      "Only in segregated institutions.",
+      "No reasonable accommodations.",
+      "Conditioned exclusively on a perfect report.",
+      "Outside the regular network whenever there is support."
+    ],
+    "explanation": "The LBI reaffirms the right to an inclusive educational system."
   },
   "m-lib-01": {
-    "prompt": "The socio-anthropological conception of deafness understands the deaf person mainly as:",
+    "prompt": "The socio-anthropological conception of deafness understands the deaf person as:",
     "options": [
-      "Subject belonging to a linguistic and cultural community, not reduced to hearing impairment.",
-      "Person who must abandon Libras.",
-      "Patient defined only by hearing loss.",
-      "Student without the right to common schooling.",
-      "Individual unable to develop language."
+      "Subject of a linguistic and cultural community, not reduced to hearing loss.",
+      "Patient defined only by clinical disability.",
+      "Person who should abandon Libras.",
+      "Individual unable to develop language.",
+      "Student without the right to common schooling."
     ],
-    "explanation": "The socio-anthropological perspective values identity, deaf culture and sign language."
+    "explanation": "The socio-anthropological perspective values language, culture and deaf identity."
   },
   "m-lib-02": {
-    "prompt": "The following are the linguistic parameters of Libras:",
+    "prompt": "Libras parameters are:",
     "options": [
       "Hand configuration, point of articulation, movement, orientation and non-manual expressions.",
-      "Only manual alphabet and lip reading.",
-      "Only words written in Portuguese.",
-      "Punctuation, graphic accent and paragraph.",
-      "Written verb tense and nominal agreement in Portuguese."
+      "Manual alphabet only.",
+      "Graphic and paragraph punctuation.",
+      "Lip reading only.",
+      "Portuguese written verb tense."
     ],
-    "explanation": "Libras has its own visual-spatial parameters, including facial and body expressions."
+    "explanation": "Libras has its own visual-spatial parameters."
   },
   "m-lib-03": {
-    "prompt": "Classifiers in Libras are resources that:",
+    "prompt": "Classifiers in Libras are resources used to:",
     "options": [
-      "They represent characteristics, movements, shapes, positions or spatial relationships of referents.",
-      "They are only used to spell proper names.",
-      "They copy the syntactic order of Portuguese word for word.",
-      "Eliminate non-manual expressions.",
-      "They are prohibited in an educational context."
+      "Represent characteristics, movements, shapes, positions and spatial relationships.",
+      "Spell all proper nouns.",
+      "Copy the order of Portuguese word for word.",
+      "Eliminate facial expressions.",
+      "Universally standardize signals."
     ],
-    "explanation": "Classifiers exploit the visual-spatial modality to represent referents and actions."
+    "explanation": "Classifiers explore the visual-spatial modality."
   },
   "m-lib-04": {
-    "prompt": "Regarding iconicity in Libras, it is correct to state that:",
+    "prompt": "Regarding iconicity in Libras, it is correct to say:",
     "options": [
-      "Some signs have a visual relationship with the referent, but language is not mere mimicry.",
-      "All signs are universal and the same in all countries.",
+      "Some signs are visually motivated, but Libras is neither mimicry nor a universal language.",
+      "All signs are the same in all countries.",
       "Libras has no grammar.",
-      "Iconicity prevents linguistic variation.",
-      "Every signal can be understood without learning."
+      "Iconicity eliminates linguistic variation.",
+      "Every signal is understood without learning."
     ],
-    "explanation": "Iconicity exists, but Libras is a natural language with rules, variation and arbitrariness."
+    "explanation": "Libras is a natural language with grammar, variation and partial iconicity."
   },
   "m-lib-05": {
     "prompt": "The spatial organization of speech in Libras allows:",
     "options": [
-      "Establish referents in space, mark relationships and organize discourse cohesion.",
-      "Delete concordance and referencing.",
-      "Always translate in literal Portuguese order.",
-      "Use only isolated signals without context.",
-      "Replace facial expressions with written punctuation."
+      "Establish referents, mark relationships and organize cohesion in the signaling space.",
+      "Delete referencing.",
+      "Always translate Portuguese literally.",
+      "Use isolated signals without context.",
+      "Replace non-manual expressions with punctuation."
     ],
-    "explanation": "Space is a grammatical element of Libras, used for referencing, agreement and discursive organization."
+    "explanation": "Space is grammatically relevant in Libras."
   },
   "m-lib-06": {
-    "prompt": "In bilingual education for the deaf, the most appropriate relationship between Libras and Portuguese is:",
+    "prompt": "In bilingual education for the deaf, it is appropriate to consider:",
     "options": [
-      "Libras as language of instruction/first language and written Portuguese as a second language, depending on the context.",
-      "Mandatory oral Portuguese as the only language.",
-      "Libras just as an auxiliary gesture with no linguistic value.",
+      "Libras as L1 and written Portuguese as L2, respecting the student's context.",
+      "Oral Portuguese as the only mandatory language.",
+      "Libras as a gesture without linguistic value.",
       "Exclusion of written Portuguese.",
-      "Use of any language without planning."
+      "Lack of linguistic planning."
     ],
-    "explanation": "The bilingual approach recognizes Libras as the central language and written Portuguese as L2."
+    "explanation": "The bilingual approach recognizes Libras as the first language and written Portuguese as the second."
   },
   "m-lib-07": {
-    "prompt": "In educational interpretation, the Libras interpreter must:",
+    "prompt": "In educational interpreting, the interpreter must:",
     "options": [
       "Mediate linguistically with ethics, fidelity, confidentiality and respect for the limits of the role.",
-      "Take on the role of head teacher of the subject.",
+      "Take on the role of full professor.",
       "Change content according to personal opinion.",
-      "Evaluate the student's final performance alone.",
-      "Always omit difficult information to simplify."
+      "Assess the student alone.",
+      "Omit complex information for convenience."
     ],
-    "explanation": "The interpreter works in linguistic mediation and must preserve ethics, fidelity and professional limits."
+    "explanation": "The interpreter mediates communication and preserves professional ethics."
   },
   "m-lib-08": {
-    "prompt": "Law No. 10,436/2002 is important because:",
+    "prompt": "Law No. 10,436/2002 is relevant because:",
     "options": [
       "Recognizes Libras as a legal means of communication and expression.",
-      "Extinguishes the Portuguese language in schools.",
-      "Prohibits the use of Libras in public bodies.",
-      "Only regulates school transport.",
-      "Defines Libras as a universal language without grammar."
+      "Prohibits Libras in public bodies.",
+      "Extinct the Portuguese Language.",
+      "Defines Libras as universal mimicry.",
+      "Only regulates school transport."
     ],
-    "explanation": "Law 10,436/2002 officially recognizes Libras in Brazil."
+    "explanation": "The law officially recognizes Libras in Brazil."
   },
   "m-lib-09": {
-    "prompt": "Decree No. 5,626/2005 regulates aspects such as:",
+    "prompt": "Decree No. 5,626/2005 deals, among other aspects, with:",
     "options": [
-      "Training, teaching, use and dissemination of Libras and linguistic accessibility for deaf people.",
-      "Just school lunches.",
-      "Exclusively contracting public works.",
-      "Ban on educational interpreters.",
-      "Replacing Libras with lip reading."
+      "Training, teaching, dissemination of Libras and linguistic accessibility.",
+      "School lunches exclusively.",
+      "Ban on interpreters.",
+      "Replacing Libras with lip reading.",
+      "Public works contracting only."
     ],
-    "explanation": "The decree details Libras policies, professional training and communication accessibility."
+    "explanation": "The decree regulates aspects of the Libras Law."
   },
   "m-lib-10": {
-    "prompt": "The contrastive analysis between Libras and Portuguese helps the teacher/interpreter to understand that:",
+    "prompt": "The contrastive analysis between Libras and Portuguese helps to understand that:",
     "options": [
-      "Languages have different modalities and structures, requiring appropriate translation and pedagogical choices.",
-      "Libras must copy the structure of Portuguese word for word.",
-      "There is no difference between signed language and oral-written language.",
+      "Languages have different modalities and structures, requiring appropriate translation choices.",
       "Literal translation always guarantees understanding.",
+      "Libras must copy the Portuguese syntax.",
+      "There is no structural difference between languages.",
       "Written Portuguese does not need to be taught."
     ],
-    "explanation": "Comparing structures avoids mechanical translation and supports teaching written Portuguese as L2."
+    "explanation": "Comparing languages avoids mechanical translation."
   },
   "m-lib-11": {
     "prompt": "In the bilingual context, UDL favors deaf students when:",
     "options": [
       "It offers visual resources, Libras, accessible written Portuguese and multiple forms of participation.",
-      "Take Libras out of class.",
-      "Uses only oral exposure without visual support.",
+      "Remove Libras from class.",
+      "Uses oral exposure only.",
       "Prevents interaction with colleagues.",
-      "Applies assessments without considering linguistic modality."
+      "Applies assessment without linguistic accessibility."
     ],
-    "explanation": "DUA expands access to content in different ways, respecting the visual experience of deaf students."
+    "explanation": "DUA expands access and participation through different means."
   },
   "m-lib-12": {
-    "prompt": "In assessments of deaf students using Libras, an appropriate practice is:",
+    "prompt": "When evaluating deaf students who use Libras, it is appropriate:",
     "options": [
       "Ensure linguistic accessibility and criteria consistent with the objectives assessed.",
       "Assess only oral language in Portuguese.",
-      "Disregard Libras when understanding the statement.",
-      "Punish linguistic differences without pedagogical analysis.",
-      "Prevent use of visual resources."
+      "Disregard Libras in statements.",
+      "Punish linguistic differences without analysis.",
+      "Prevent visuals."
     ],
-    "explanation": "Bilingual assessment must separate language barriers from the actual learning objective."
+    "explanation": "Assessment must distinguish language barrier from learning objective."
+  },
+  "m-lib-13": {
+    "prompt": "Regarding linguistic variation in Libras, select the correct one:",
+    "options": [
+      "It can occur by region, generation, community and context of use.",
+      "It doesn't exist, as Libras is identical throughout the country.",
+      "It is a mistake that must always be punished.",
+      "It only occurs in written Portuguese.",
+      "Prevents the existence of grammar."
+    ],
+    "explanation": "Natural languages show variation."
+  },
+  "m-lib-14": {
+    "prompt": "The interpreter’s work with teachers and teaching staff must seek to:",
+    "options": [
+      "Communication accessibility planning, without replacing teaching responsibility.",
+      "Plan the discipline yourself.",
+      "Set final grades without the teacher.",
+      "Isolate the deaf student.",
+      "Reduce content without pedagogical criteria."
+    ],
+    "explanation": "The interpreter contributes to linguistic accessibility, but does not replace the teacher."
+  },
+  "m-lib-15": {
+    "prompt": "Deaf culture involves:",
+    "options": [
+      "Practices, values, visual experiences, identity and cultural production of deaf communities.",
+      "Audiological diagnosis only.",
+      "Lack of own language.",
+      "Mandatory oralization.",
+      "Absolute homogeneity among all deaf people."
+    ],
+    "explanation": "Deaf culture relates to identity, community, language and visual experiences."
   }
 };

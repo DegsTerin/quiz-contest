@@ -109,6 +109,8 @@ No backend is required. The browser loads JavaScript directly, renders the curre
 
 The project currently includes 50 questions per profile, for 100 total questions.
 
+The questions are original simulated items. They were redesigned to follow the structure commonly seen in FURB-style exams, including assertion analysis, true/false sequences, column matching, scenario-based prompts, and closely related distractors. They are not verbatim copies of previous exams.
+
 ## LocalStorage Model
 
 The app stores one progress object per profile. Each question tracks:
