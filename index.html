@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Quiz Estático</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Treinador de estudos no navegador</p>
+        <div class="profile-switch" role="group" aria-label="Selecionar perfil do quiz">
+          <button class="profile-btn active" type="button" data-profile="bruno" aria-pressed="true">Bruno</button>
+          <button class="profile-btn" type="button" data-profile="maria" aria-pressed="false">Maria</button>
+        </div>
+        <h1 id="app-title">Quiz Analista de Informática</h1>
+        <p id="app-subtitle" class="subtitle">
+          Questões alinhadas ao edital SED/SC 794/2026, com progresso salvo, revisão de erros e repetição espaçada simples.
+        </p>
+      </div>
+      <div class="hero-actions">
+        <button id="start-all-btn" class="secondary-btn">Iniciar Quiz Completo</button>
+        <button id="review-mode-btn" class="secondary-btn">Revisar Erros</button>
+        <button id="reset-progress-btn" class="danger-btn">Zerar Progresso</button>
+      </div>
+    </header>
+
+    <section class="dashboard">
+      <article class="card stat-card">
+        <span class="stat-label">Modo</span>
+        <strong id="mode-label">Quiz Completo</strong>
+      </article>
+      <article class="card stat-card">
+        <span class="stat-label">Progresso</span>
+        <strong id="progress-label">0 / 0</strong>
+      </article>
+      <article class="card stat-card">
+        <span class="stat-label">Pontuação</span>
+        <strong id="score-label">0</strong>
+      </article>
+      <article class="card stat-card">
+        <span class="stat-label">Aproveitamento</span>
+        <strong id="accuracy-label">0%</strong>
+      </article>
+    </section>
+
+    <section class="card question-panel">
+      <div class="question-meta">
+        <span id="question-category" class="pill">Categoria</span>
+        <span id="question-position">Questão 1</span>
+      </div>
+
+      <h2 id="question-text">Clique em “Iniciar Quiz Completo” para começar.</h2>
+
+      <div id="answer-buttons" class="answer-grid"></div>
+
+      <div id="feedback-box" class="feedback-box hidden" aria-live="polite"></div>
+
+      <div class="question-actions">
+        <button id="next-btn" class="primary-btn" disabled>Próxima Questão</button>
+      </div>
+    </section>
+
+    <section class="grid-two">
+      <article class="card">
+        <h3>Resumo da Sessão</h3>
+        <dl class="summary-list">
+          <div>
+            <dt>Banco de questões</dt>
+            <dd id="bank-size">0</dd>
+          </div>
+          <div>
+            <dt>Erros pendentes de revisão</dt>
+            <dd id="pending-review">0</dd>
+          </div>
+          <div>
+            <dt>Questões com histórico de erro</dt>
+            <dd id="tracked-review">0</dd>
+          </div>
+        </dl>
+      </article>
+
+      <article class="card">
+        <h3>Como Funciona</h3>
+        <p>
+          Respostas erradas entram em uma fila de revisão. Sequências de acertos aumentam o intervalo,
+          então questões dominadas aparecem com menos frequência. Tudo fica salvo no navegador com LocalStorage.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
