@@ -1,14 +1,144 @@
 const LEGACY_STORAGE_KEY = "static-quiz-system-state-v1";
 const ACTIVE_PROFILE_KEY = "static-quiz-system-active-profile";
+const ACTIVE_LANGUAGE_KEY = "static-quiz-system-active-language";
 const STORAGE_KEY_PREFIX = "static-quiz-system-state-v2";
 const DEFAULT_PROFILE_ID = "bruno";
+const DEFAULT_LANGUAGE_ID = "pt";
 const REVIEW_MASTERY_STREAK = 2;
 const ANSWER_LETTERS = ["A", "B", "C", "D", "E"];
+
+const I18N = {
+  pt: {
+    htmlLang: "pt-BR",
+    pageTitle: "Sistema de Quiz Estático",
+    eyebrow: "Treinador de estudos no navegador",
+    profileSwitchLabel: "Selecionar perfil do quiz",
+    languageSwitchLabel: "Selecionar idioma",
+    startAll: "Iniciar Quiz Completo",
+    reviewWrong: "Revisar Erros",
+    resetProgress: "Zerar Progresso",
+    modeLabel: "Modo",
+    progressLabel: "Progresso",
+    scoreLabel: "Pontuação",
+    accuracyLabel: "Aproveitamento",
+    nextQuestion: "Próxima Questão",
+    sessionSummaryTitle: "Resumo da Sessão",
+    questionBankLabel: "Banco de questões",
+    pendingReviewLabel: "Erros pendentes de revisão",
+    trackedReviewLabel: "Questões com histórico de erro",
+    howItWorksTitle: "Como Funciona",
+    howItWorksText: "Respostas erradas entram em uma fila de revisão. Sequências de acertos aumentam o intervalo, então questões dominadas aparecem com menos frequência. Tudo fica salvo no navegador com LocalStorage.",
+    allMode: "Quiz Completo",
+    reviewMode: "Revisão de Erros",
+    readyPosition: "Aguardando início",
+    readyMessage: "Clique em “Iniciar Quiz Completo” para começar.",
+    emptyReviewMessage: "Não há respostas erradas salvas para revisar agora.",
+    emptyBankMessage: "Nenhuma questão foi carregada.",
+    questionPosition: "Questão {current} de {total}",
+    correctFeedback: "Correto. {explanation}",
+    incorrectFeedback: "Incorreto. Você escolheu \"{selected}\". Resposta correta: \"{correct}\". {explanation}",
+    completedCategory: "Concluído",
+    completedPosition: "Sessão finalizada",
+    completedReviewMessage: "Revisão concluída. Inicie outra revisão ou refaça o quiz completo.",
+    completedAllMessage: "Quiz completo concluído. As respostas erradas foram revisadas pela fila de repetição.",
+    sessionAccuracyMessage: "Aproveitamento da sessão: {accuracy}%. Questões respondidas: {answered}. Acertos: {correct}.",
+    scoreValue: "{correct} acertos",
+    resetMessage: "Progresso zerado. Clique em “Iniciar Quiz Completo” para recomeçar.",
+    profileSelectedMessage: "Perfil de {owner} selecionado. Clique em “Iniciar Quiz Completo” para começar.",
+    profiles: {
+      bruno: {
+        title: "Quiz Analista de Informática",
+        description: "Questões alinhadas ao edital SED/SC 794/2026 para Analista de Informática, com revisão de erros e repetição espaçada simples."
+      },
+      maria: {
+        title: "Quiz Professora AEE/Misto e Libras",
+        description: "Questões alinhadas ao edital SED/SC 793/2026 para AEE/Misto e Intérprete da Libras, com foco no nível da prova."
+      }
+    },
+    categories: {
+      "Conhecimentos Gerais": "Conhecimentos Gerais",
+      "Noções de Informática": "Noções de Informática",
+      "Conhecimentos Específicos": "Conhecimentos Específicos",
+      "Metodologia da Prática Docente": "Metodologia da Prática Docente",
+      "Específicos - AEE/Misto": "Específicos - AEE/Misto",
+      "Específicos - Intérprete da Libras": "Específicos - Intérprete da Libras"
+    },
+    difficulties: {
+      "Fácil": "Fácil",
+      "Média": "Média",
+      "Difícil": "Difícil"
+    }
+  },
+  en: {
+    htmlLang: "en",
+    pageTitle: "Static Quiz System",
+    eyebrow: "Browser-based study trainer",
+    profileSwitchLabel: "Select quiz profile",
+    languageSwitchLabel: "Select language",
+    startAll: "Start Full Quiz",
+    reviewWrong: "Review Mistakes",
+    resetProgress: "Reset Progress",
+    modeLabel: "Mode",
+    progressLabel: "Progress",
+    scoreLabel: "Score",
+    accuracyLabel: "Accuracy",
+    nextQuestion: "Next Question",
+    sessionSummaryTitle: "Session Summary",
+    questionBankLabel: "Question bank",
+    pendingReviewLabel: "Mistakes pending review",
+    trackedReviewLabel: "Questions with mistake history",
+    howItWorksTitle: "How It Works",
+    howItWorksText: "Wrong answers enter a review queue. Correct streaks increase the interval, so mastered questions appear less often. Everything is saved locally in the browser with LocalStorage.",
+    allMode: "Full Quiz",
+    reviewMode: "Mistake Review",
+    readyPosition: "Waiting to start",
+    readyMessage: "Click “Start Full Quiz” to begin.",
+    emptyReviewMessage: "There are no saved mistakes to review right now.",
+    emptyBankMessage: "No questions were loaded.",
+    questionPosition: "Question {current} of {total}",
+    correctFeedback: "Correct. {explanation}",
+    incorrectFeedback: "Incorrect. You chose \"{selected}\". Correct answer: \"{correct}\". {explanation}",
+    completedCategory: "Completed",
+    completedPosition: "Session finished",
+    completedReviewMessage: "Review finished. Start another review or retake the full quiz.",
+    completedAllMessage: "Full quiz finished. Wrong answers were reviewed through the repetition queue.",
+    sessionAccuracyMessage: "Session accuracy: {accuracy}%. Questions answered: {answered}. Correct answers: {correct}.",
+    scoreValue: "{correct} correct",
+    resetMessage: "Progress reset. Click “Start Full Quiz” to begin again.",
+    profileSelectedMessage: "{owner}'s profile selected. Click “Start Full Quiz” to begin.",
+    profiles: {
+      bruno: {
+        title: "IT Analyst Quiz",
+        description: "Questions aligned with the SED/SC 794/2026 notice for IT Analyst, featuring mistake review and a simple spaced repetition flow."
+      },
+      maria: {
+        title: "AEE/Mixed and Libras Teacher Quiz",
+        description: "Questions aligned with the SED/SC 793/2026 notice for AEE/Mixed and Libras Interpreter teacher roles, tuned to the exam level."
+      }
+    },
+    categories: {
+      "Conhecimentos Gerais": "General Knowledge",
+      "Noções de Informática": "Computer Basics",
+      "Conhecimentos Específicos": "Role-Specific Knowledge",
+      "Metodologia da Prática Docente": "Teaching Practice Methodology",
+      "Específicos - AEE/Misto": "Specific Topics - AEE/Mixed",
+      "Específicos - Intérprete da Libras": "Specific Topics - Libras Interpreter"
+    },
+    difficulties: {
+      "Fácil": "Easy",
+      "Média": "Medium",
+      "Difícil": "Hard"
+    }
+  }
+};
 
 const elements = {
   appTitle: document.getElementById("app-title"),
   appSubtitle: document.getElementById("app-subtitle"),
   profileButtons: document.querySelectorAll("[data-profile]"),
+  languageButtons: document.querySelectorAll("[data-language]"),
+  translatedText: document.querySelectorAll("[data-i18n]"),
+  translatedAriaLabels: document.querySelectorAll("[data-i18n-aria-label]"),
   startAllBtn: document.getElementById("start-all-btn"),
   reviewModeBtn: document.getElementById("review-mode-btn"),
   resetProgressBtn: document.getElementById("reset-progress-btn"),
@@ -27,6 +157,7 @@ const elements = {
   trackedReview: document.getElementById("tracked-review")
 };
 
+let activeLanguageId = getInitialLanguageId();
 let activeProfileId = getInitialProfileId();
 let activeQuestionSet = QUESTION_SETS[activeProfileId];
 let questions = activeQuestionSet.questions;
@@ -34,9 +165,26 @@ let questionMap = createQuestionMap();
 let appState = loadState();
 let session = createEmptySession();
 
+function getInitialLanguageId() {
+  const savedLanguageId = localStorage.getItem(ACTIVE_LANGUAGE_KEY);
+  return I18N[savedLanguageId] ? savedLanguageId : DEFAULT_LANGUAGE_ID;
+}
+
 function getInitialProfileId() {
   const savedProfileId = localStorage.getItem(ACTIVE_PROFILE_KEY);
   return QUESTION_SETS[savedProfileId] ? savedProfileId : DEFAULT_PROFILE_ID;
+}
+
+function t(key, replacements = {}) {
+  const value = I18N[activeLanguageId][key] || I18N[DEFAULT_LANGUAGE_ID][key] || key;
+  if (typeof value !== "string") {
+    return value;
+  }
+
+  return Object.entries(replacements).reduce(
+    (text, [name, replacement]) => text.replaceAll(`{${name}}`, String(replacement)),
+    value
+  );
 }
 
 function getStorageKey(profileId = activeProfileId) {
@@ -198,9 +346,7 @@ function startSession(mode) {
   };
 
   if (queue.length === 0) {
-    const message = mode === "review"
-      ? "Não há respostas erradas salvas para revisar agora."
-      : "Nenhuma questão foi carregada.";
+    const message = mode === "review" ? t("emptyReviewMessage") : t("emptyBankMessage");
     showIdleState(message);
     updateDashboard();
     return;
@@ -217,7 +363,7 @@ function showIdleState(message) {
   session.isComplete = true;
 
   elements.questionCategory.textContent = activeQuestionSet.owner;
-  elements.questionPosition.textContent = "Aguardando início";
+  elements.questionPosition.textContent = t("readyPosition");
   elements.questionText.textContent = message;
   elements.answerButtons.innerHTML = "";
   elements.nextBtn.disabled = true;
@@ -269,15 +415,18 @@ function extractDueReviewItems() {
   return shuffleArray(dueItems);
 }
 
+function translateCategory(category) {
+  return I18N[activeLanguageId].categories[category] || category;
+}
+
+function translateDifficulty(difficulty) {
+  return I18N[activeLanguageId].difficulties[difficulty] || difficulty;
+}
+
 function renderQuestion() {
   const question = questionMap.get(session.currentQuestionId);
-  const progressTotal = session.totalPlanned + session.reviewQueue.length + session.queue.length + 1;
 
-  elements.modeLabel.textContent = session.mode === "review" ? "Revisão de Erros" : "Quiz Completo";
-  elements.questionCategory.textContent = question.difficulty
-    ? `${question.category} • ${question.difficulty}`
-    : question.category;
-  elements.questionPosition.textContent = `Questão ${session.currentIndex} de ${progressTotal}`;
+  updateCurrentQuestionChrome();
   elements.questionText.textContent = question.prompt;
   elements.answerButtons.innerHTML = "";
   elements.nextBtn.disabled = true;
@@ -285,14 +434,35 @@ function renderQuestion() {
 
   session.currentAnswers.forEach((answer, index) => {
     const button = document.createElement("button");
+    const letter = document.createElement("span");
+    const label = document.createElement("span");
+
     button.className = "answer-btn";
     button.dataset.answerLabel = answer.label;
-    button.innerHTML = `<span class="answer-letter">${ANSWER_LETTERS[index]}</span><span>${answer.label}</span>`;
+    letter.className = "answer-letter";
+    letter.textContent = ANSWER_LETTERS[index];
+    label.textContent = answer.label;
+
+    button.append(letter, label);
     button.addEventListener("click", () => handleAnswer(answer));
     elements.answerButtons.appendChild(button);
   });
 
   updateDashboard();
+}
+
+function updateCurrentQuestionChrome() {
+  const question = questionMap.get(session.currentQuestionId);
+  const progressTotal = session.totalPlanned + session.reviewQueue.length + session.queue.length + 1;
+
+  elements.modeLabel.textContent = session.mode === "review" ? t("reviewMode") : t("allMode");
+  elements.questionCategory.textContent = question.difficulty
+    ? `${translateCategory(question.category)} • ${translateDifficulty(question.difficulty)}`
+    : translateCategory(question.category);
+  elements.questionPosition.textContent = t("questionPosition", {
+    current: session.currentIndex,
+    total: progressTotal
+  });
 }
 
 function handleAnswer(selectedAnswer) {
@@ -371,13 +541,17 @@ function showFeedback(isCorrect, question, selectedLabel) {
 
   if (isCorrect) {
     elements.feedbackBox.classList.add("success");
-    elements.feedbackBox.textContent = `Correto. ${question.explanation}`;
+    elements.feedbackBox.textContent = t("correctFeedback", { explanation: question.explanation });
     return;
   }
 
   const correctAnswer = question.options[question.answerIndex];
   elements.feedbackBox.classList.add("error");
-  elements.feedbackBox.textContent = `Incorreto. Você escolheu "${selectedLabel}". Resposta correta: "${correctAnswer}". ${question.explanation}`;
+  elements.feedbackBox.textContent = t("incorrectFeedback", {
+    selected: selectedLabel,
+    correct: correctAnswer,
+    explanation: question.explanation
+  });
 }
 
 function hideFeedback() {
@@ -396,15 +570,19 @@ function finishSession() {
     ? 0
     : Math.round((session.sessionCorrect / session.sessionAnswered) * 100);
 
-  elements.questionCategory.textContent = "Concluído";
-  elements.questionPosition.textContent = "Sessão finalizada";
+  elements.questionCategory.textContent = t("completedCategory");
+  elements.questionPosition.textContent = t("completedPosition");
   elements.questionText.textContent = session.mode === "review"
-    ? "Revisão concluída. Inicie outra revisão ou refaça o quiz completo."
-    : "Quiz completo concluído. As respostas erradas foram revisadas pela fila de repetição.";
+    ? t("completedReviewMessage")
+    : t("completedAllMessage");
 
   elements.feedbackBox.classList.remove("hidden", "success", "error");
   elements.feedbackBox.classList.add("success");
-  elements.feedbackBox.textContent = `Aproveitamento da sessão: ${accuracy}%. Questões respondidas: ${session.sessionAnswered}. Acertos: ${session.sessionCorrect}.`;
+  elements.feedbackBox.textContent = t("sessionAccuracyMessage", {
+    accuracy,
+    answered: session.sessionAnswered,
+    correct: session.sessionCorrect
+  });
 
   updateDashboard();
 }
@@ -420,8 +598,9 @@ function updateDashboard() {
   const progressTotal = session.totalPlanned + session.reviewQueue.length;
   const progressCurrent = Math.min(session.currentIndex, progressTotal);
 
+  elements.modeLabel.textContent = session.mode === "review" ? t("reviewMode") : t("allMode");
   elements.progressLabel.textContent = progressTotal > 0 ? `${progressCurrent} / ${progressTotal}` : "0 / 0";
-  elements.scoreLabel.textContent = `${session.sessionCorrect} acertos`;
+  elements.scoreLabel.textContent = t("scoreValue", { correct: session.sessionCorrect });
   elements.accuracyLabel.textContent = `${accuracy}%`;
   elements.bankSize.textContent = String(totalQuestions);
   elements.pendingReview.textContent = String(reviewCount);
@@ -438,7 +617,7 @@ function resetProgress() {
 
   appState = loadState();
   session = createEmptySession();
-  showIdleState("Progresso zerado. Clique em “Iniciar Quiz Completo” para recomeçar.");
+  showIdleState(t("resetMessage"));
   updateDashboard();
 }
 
@@ -456,19 +635,65 @@ function switchProfile(profileId) {
   appState = loadState();
   session = createEmptySession();
   updateProfileUi();
-  showIdleState(`Perfil de ${activeQuestionSet.owner} selecionado. Clique em “Iniciar Quiz Completo” para começar.`);
+  showIdleState(t("profileSelectedMessage", { owner: activeQuestionSet.owner }));
   updateDashboard();
 }
 
+function switchLanguage(languageId) {
+  if (!I18N[languageId] || languageId === activeLanguageId) {
+    return;
+  }
+
+  activeLanguageId = languageId;
+  localStorage.setItem(ACTIVE_LANGUAGE_KEY, activeLanguageId);
+  applyLanguage();
+
+  if (session.currentQuestionId) {
+    updateCurrentQuestionChrome();
+  } else {
+    showIdleState(t("readyMessage"));
+  }
+
+  updateDashboard();
+}
+
+function applyStaticTranslations() {
+  document.documentElement.lang = I18N[activeLanguageId].htmlLang;
+  document.title = t("pageTitle");
+
+  elements.translatedText.forEach((element) => {
+    element.textContent = t(element.dataset.i18n);
+  });
+
+  elements.translatedAriaLabels.forEach((element) => {
+    element.setAttribute("aria-label", t(element.dataset.i18nAriaLabel));
+  });
+}
+
 function updateProfileUi() {
-  elements.appTitle.textContent = activeQuestionSet.title;
-  elements.appSubtitle.textContent = activeQuestionSet.description;
+  const profileCopy = I18N[activeLanguageId].profiles[activeProfileId];
+  elements.appTitle.textContent = profileCopy.title;
+  elements.appSubtitle.textContent = profileCopy.description;
 
   elements.profileButtons.forEach((button) => {
     const isActive = button.dataset.profile === activeProfileId;
     button.classList.toggle("active", isActive);
     button.setAttribute("aria-pressed", String(isActive));
   });
+}
+
+function updateLanguageUi() {
+  elements.languageButtons.forEach((button) => {
+    const isActive = button.dataset.language === activeLanguageId;
+    button.classList.toggle("active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  });
+}
+
+function applyLanguage() {
+  applyStaticTranslations();
+  updateProfileUi();
+  updateLanguageUi();
 }
 
 elements.startAllBtn.addEventListener("click", () => startSession("all"));
@@ -478,7 +703,10 @@ elements.nextBtn.addEventListener("click", showNextQuestion);
 elements.profileButtons.forEach((button) => {
   button.addEventListener("click", () => switchProfile(button.dataset.profile));
 });
+elements.languageButtons.forEach((button) => {
+  button.addEventListener("click", () => switchLanguage(button.dataset.language));
+});
 
-updateProfileUi();
-showIdleState("Clique em “Iniciar Quiz Completo” para começar.");
+applyLanguage();
+showIdleState(t("readyMessage"));
 updateDashboard();

@@ -10,10 +10,16 @@
   <main class="app-shell">
     <header class="hero">
       <div>
-        <p class="eyebrow">Treinador de estudos no navegador</p>
-        <div class="profile-switch" role="group" aria-label="Selecionar perfil do quiz">
+        <p class="eyebrow" data-i18n="eyebrow">Treinador de estudos no navegador</p>
+        <div class="switch-row">
+          <div class="profile-switch" role="group" aria-label="Selecionar perfil do quiz" data-i18n-aria-label="profileSwitchLabel">
           <button class="profile-btn active" type="button" data-profile="bruno" aria-pressed="true">Bruno</button>
           <button class="profile-btn" type="button" data-profile="maria" aria-pressed="false">Maria</button>
+          </div>
+          <div class="language-switch" role="group" aria-label="Selecionar idioma" data-i18n-aria-label="languageSwitchLabel">
+            <button class="language-btn active" type="button" data-language="pt" aria-pressed="true">PT</button>
+            <button class="language-btn" type="button" data-language="en" aria-pressed="false">EN</button>
+          </div>
         </div>
         <h1 id="app-title">Quiz Analista de Informática</h1>
         <p id="app-subtitle" class="subtitle">
@@ -21,27 +27,27 @@
         </p>
       </div>
       <div class="hero-actions">
-        <button id="start-all-btn" class="secondary-btn">Iniciar Quiz Completo</button>
-        <button id="review-mode-btn" class="secondary-btn">Revisar Erros</button>
-        <button id="reset-progress-btn" class="danger-btn">Zerar Progresso</button>
+        <button id="start-all-btn" class="secondary-btn" data-i18n="startAll">Iniciar Quiz Completo</button>
+        <button id="review-mode-btn" class="secondary-btn" data-i18n="reviewWrong">Revisar Erros</button>
+        <button id="reset-progress-btn" class="danger-btn" data-i18n="resetProgress">Zerar Progresso</button>
       </div>
     </header>
 
     <section class="dashboard">
       <article class="card stat-card">
-        <span class="stat-label">Modo</span>
+        <span class="stat-label" data-i18n="modeLabel">Modo</span>
         <strong id="mode-label">Quiz Completo</strong>
       </article>
       <article class="card stat-card">
-        <span class="stat-label">Progresso</span>
+        <span class="stat-label" data-i18n="progressLabel">Progresso</span>
         <strong id="progress-label">0 / 0</strong>
       </article>
       <article class="card stat-card">
-        <span class="stat-label">Pontuação</span>
+        <span class="stat-label" data-i18n="scoreLabel">Pontuação</span>
         <strong id="score-label">0</strong>
       </article>
       <article class="card stat-card">
-        <span class="stat-label">Aproveitamento</span>
+        <span class="stat-label" data-i18n="accuracyLabel">Aproveitamento</span>
         <strong id="accuracy-label">0%</strong>
       </article>
     </section>
@@ -59,32 +65,32 @@
       <div id="feedback-box" class="feedback-box hidden" aria-live="polite"></div>
 
       <div class="question-actions">
-        <button id="next-btn" class="primary-btn" disabled>Próxima Questão</button>
+        <button id="next-btn" class="primary-btn" disabled data-i18n="nextQuestion">Próxima Questão</button>
       </div>
     </section>
 
     <section class="grid-two">
       <article class="card">
-        <h3>Resumo da Sessão</h3>
+        <h3 data-i18n="sessionSummaryTitle">Resumo da Sessão</h3>
         <dl class="summary-list">
           <div>
-            <dt>Banco de questões</dt>
+            <dt data-i18n="questionBankLabel">Banco de questões</dt>
             <dd id="bank-size">0</dd>
           </div>
           <div>
-            <dt>Erros pendentes de revisão</dt>
+            <dt data-i18n="pendingReviewLabel">Erros pendentes de revisão</dt>
             <dd id="pending-review">0</dd>
           </div>
           <div>
-            <dt>Questões com histórico de erro</dt>
+            <dt data-i18n="trackedReviewLabel">Questões com histórico de erro</dt>
             <dd id="tracked-review">0</dd>
           </div>
         </dl>
       </article>
 
       <article class="card">
-        <h3>Como Funciona</h3>
-        <p>
+        <h3 data-i18n="howItWorksTitle">Como Funciona</h3>
+        <p data-i18n="howItWorksText">
           Respostas erradas entram em uma fila de revisão. Sequências de acertos aumentam o intervalo,
           então questões dominadas aparecem com menos frequência. Tudo fica salvo no navegador com LocalStorage.
         </p>

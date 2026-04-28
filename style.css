@@ -64,17 +64,26 @@ body {
   font-size: clamp(2rem, 3vw, 2.7rem);
 }
 
-.profile-switch {
+.switch-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.profile-switch,
+.language-switch {
   display: inline-flex;
   gap: 6px;
   padding: 6px;
-  margin-bottom: 14px;
   border: 1px solid rgba(216, 208, 196, 0.9);
   border-radius: 999px;
   background: #f0ebe2;
 }
 
-.profile-btn {
+.profile-btn,
+.language-btn {
   padding: 9px 16px;
   border-radius: 999px;
   background: transparent;
@@ -82,7 +91,12 @@ body {
   font-weight: 700;
 }
 
-.profile-btn.active {
+.language-btn {
+  min-width: 48px;
+}
+
+.profile-btn.active,
+.language-btn.active {
   background: var(--accent);
   color: #fff;
   box-shadow: 0 8px 18px rgba(29, 111, 95, 0.18);
