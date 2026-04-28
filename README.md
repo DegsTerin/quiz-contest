@@ -31,7 +31,7 @@ The content is tailored to Brazilian public contest preparation, while the inter
 | Review queue | Missed questions are saved and repeated after the main round. |
 | Basic spaced repetition | Correct streaks reduce how often a question appears again. |
 | Local persistence | Progress, accuracy, streaks, and review status are stored in LocalStorage. |
-| Bilingual interface | Portuguese is default; English can be selected from the language switcher. |
+| Bilingual experience | Portuguese is default; English translates the interface, questions, alternatives, and feedback explanations. |
 | GitHub Pages ready | No build step, no server, no external libraries. |
 
 ## How It Works
@@ -68,14 +68,14 @@ flowchart TD
 
 ## Internationalization
 
-The UI supports two languages:
+The app supports two languages:
 
 | Language | Behavior |
 | --- | --- |
-| Portuguese | Default language for the app interface. |
-| English | Portfolio-friendly interface for buttons, labels, messages, stats, and feedback scaffolding. |
+| Portuguese | Default language for the complete quiz experience. |
+| English | Portfolio-friendly translation for the interface, question prompts, answer alternatives, and feedback explanations. |
 
-The question text remains in Portuguese because the study material is based on Brazilian contest notices and legislation.
+The English question bank is stored statically in `questions-en.js`, so the deployed app does not depend on any external translation service at runtime.
 
 ## Architecture
 
@@ -85,6 +85,7 @@ quiz-contest/
   style.css        Responsive styling and visual system
   app.js           Quiz engine, i18n, LocalStorage, review logic
   questions.js     Question banks and profile metadata
+  questions-en.js  English translations for prompts, answers, and explanations
   docs/
     screenshot.png README screenshot
 ```
@@ -167,4 +168,3 @@ Folder: /
 - Add full question-bank translation support.
 - Add charts for accuracy by subject.
 - Add keyboard shortcuts for A-E answers.
-

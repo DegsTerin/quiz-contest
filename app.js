@@ -289,6 +289,7 @@ function shuffleArray(items) {
 function randomizeAnswers(question) {
   const answerChoices = question.options.map((option, index) => ({
     label: option,
+    sourceIndex: index,
     isCorrect: index === question.answerIndex
   }));
 
@@ -423,8 +424,27 @@ function translateDifficulty(difficulty) {
   return I18N[activeLanguageId].difficulties[difficulty] || difficulty;
 }
 
+function getLocalizedQuestion(question) {
+  if (activeLanguageId !== "en" || typeof EN_QUESTION_TRANSLATIONS === "undefined") {
+    return question;
+  }
+
+  const translation = EN_QUESTION_TRANSLATIONS[question.id];
+  if (!translation) {
+    return question;
+  }
+
+  return {
+    ...question,
+    prompt: translation.prompt || question.prompt,
+    options: translation.options || question.options,
+    explanation: translation.explanation || question.explanation
+  };
+}
+
 function renderQuestion() {
-  const question = questionMap.get(session.currentQuestionId);
+  const sourceQuestion = questionMap.get(session.currentQuestionId);
+  const question = getLocalizedQuestion(sourceQuestion);
 
   updateCurrentQuestionChrome();
   elements.questionText.textContent = question.prompt;
@@ -441,7 +461,8 @@ function renderQuestion() {
     button.dataset.answerLabel = answer.label;
     letter.className = "answer-letter";
     letter.textContent = ANSWER_LETTERS[index];
-    label.textContent = answer.label;
+    label.className = "answer-label";
+    label.textContent = question.options[answer.sourceIndex];
 
     button.append(letter, label);
     button.addEventListener("click", () => handleAnswer(answer));
@@ -474,8 +495,9 @@ function handleAnswer(selectedAnswer) {
   session.sessionAnswered += 1;
   session.reviewStep += 1;
 
-  const question = questionMap.get(session.currentQuestionId);
-  const stat = getQuestionStat(question.id);
+  const sourceQuestion = questionMap.get(session.currentQuestionId);
+  const question = getLocalizedQuestion(sourceQuestion);
+  const stat = getQuestionStat(sourceQuestion.id);
   const isCorrect = selectedAnswer.isCorrect;
 
   appState.totalAnswered += 1;
@@ -494,7 +516,7 @@ function handleAnswer(selectedAnswer) {
     if (session.currentQueueSource === "review" && stat.needsReview) {
       const delay = Math.min(4, stat.streak + 1);
       session.reviewQueue.push({
-        id: question.id,
+        id: sourceQuestion.id,
         dueStep: session.reviewStep + delay
       });
       stat.timesReviewed += 1;
@@ -507,14 +529,14 @@ function handleAnswer(selectedAnswer) {
     stat.needsReview = true;
 
     session.reviewQueue.push({
-      id: question.id,
+      id: sourceQuestion.id,
       dueStep: session.reviewStep + 1
     });
   }
 
   saveState();
   decorateAnswerButtons(selectedAnswer);
-  showFeedback(isCorrect, question, selectedAnswer.label);
+  showFeedback(isCorrect, question, selectedAnswer);
   elements.nextBtn.disabled = false;
   updateDashboard();
 }
@@ -536,7 +558,7 @@ function decorateAnswerButtons(selectedAnswer) {
   });
 }
 
-function showFeedback(isCorrect, question, selectedLabel) {
+function showFeedback(isCorrect, question, selectedAnswer) {
   elements.feedbackBox.classList.remove("hidden", "success", "error");
 
   if (isCorrect) {
@@ -548,7 +570,7 @@ function showFeedback(isCorrect, question, selectedLabel) {
   const correctAnswer = question.options[question.answerIndex];
   elements.feedbackBox.classList.add("error");
   elements.feedbackBox.textContent = t("incorrectFeedback", {
-    selected: selectedLabel,
+    selected: question.options[selectedAnswer.sourceIndex],
     correct: correctAnswer,
     explanation: question.explanation
   });
@@ -649,12 +671,30 @@ function switchLanguage(languageId) {
   applyLanguage();
 
   if (session.currentQuestionId) {
-    updateCurrentQuestionChrome();
+    rerenderCurrentQuestionAfterLanguageChange();
   } else {
     showIdleState(t("readyMessage"));
   }
 
   updateDashboard();
+}
+
+function rerenderCurrentQuestionAfterLanguageChange() {
+  const sourceQuestion = questionMap.get(session.currentQuestionId);
+  const localizedQuestion = getLocalizedQuestion(sourceQuestion);
+
+  updateCurrentQuestionChrome();
+  elements.questionText.textContent = localizedQuestion.prompt;
+
+  Array.from(elements.answerButtons.children).forEach((button, index) => {
+    const label = button.querySelector(".answer-label");
+    const answer = session.currentAnswers[index];
+    const localizedAnswer = localizedQuestion.options[answer.sourceIndex];
+
+    if (label && localizedAnswer) {
+      label.textContent = localizedAnswer;
+    }
+  });
 }
 
 function applyStaticTranslations() {
