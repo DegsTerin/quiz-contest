@@ -399,7 +399,7 @@ const EN_QUESTION_TRANSLATIONS = {
     "prompt": "In a REST API, the HTTP method most associated with fully updating a resource is:",
     "options": [
       "GET.",
-      "FUCK.",
+      "PUT.",
       "DELETE.",
       "OPTIONS.",
       "TRACE."
@@ -675,7 +675,7 @@ const EN_QUESTION_TRANSLATIONS = {
     "options": [
       "Monitor the process, offer feedback and guide pedagogical adjustments.",
       "Only occur at the end of the school year.",
-      "Just be qualifying.",
+      "Be merely classificatory.",
       "Dismiss records.",
       "Have an exclusively punitive function."
     ],
@@ -763,7 +763,7 @@ const EN_QUESTION_TRANSLATIONS = {
     "options": [
       "Clear routines, respectful bonds, mediation and participation of all.",
       "Isolation of students who require support.",
-      "Absence of combinations.",
+      "Absence of agreed classroom routines.",
       "Disciplinary control without pedagogical dimension.",
       "Strict standardization without considering barriers."
     ],
@@ -829,7 +829,7 @@ const EN_QUESTION_TRANSLATIONS = {
     "options": [
       "Expand possibilities of expression and understanding when conventional speech or writing is not enough.",
       "Eliminate social interaction.",
-      "Replace all resumes with images.",
+      "Replace the entire curriculum with images.",
       "Prevent use of Libras.",
       "Standardize communication for all students."
     ],
@@ -1016,7 +1016,7 @@ const EN_QUESTION_TRANSLATIONS = {
     "options": [
       "Recognizes Libras as a legal means of communication and expression.",
       "Prohibits Libras in public bodies.",
-      "Extinct the Portuguese Language.",
+      "Abolishes the Portuguese language.",
       "Defines Libras as universal mimicry.",
       "Only regulates school transport."
     ],

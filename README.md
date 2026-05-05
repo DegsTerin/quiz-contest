@@ -105,11 +105,11 @@ No backend is required. The browser loads JavaScript directly, renders the curre
 | Profile | Target |
 | --- | --- |
 | Bruno | IT Analyst exam preparation based on SED/SC 794/2026. |
-| Maria | AEE/Mixed and Libras Interpreter teacher roles based on SED/SC 793/2026. |
+| Maria | Hard-mode AEE/Mixed and Libras Interpreter teacher roles based on SED/SC 793/2026. |
 
 The project currently includes 50 questions per profile, for 100 total questions.
 
-The questions are original simulated items. They were redesigned to follow the structure commonly seen in FURB-style exams, including assertion analysis, true/false sequences, column matching, scenario-based prompts, and closely related distractors. They are not verbatim copies of previous exams.
+The questions are original simulated items. They were redesigned to follow the structure commonly seen in FURB-style exams, including assertion analysis, true/false sequences, column matching, scenario-based prompts, and closely related distractors. Maria's profile is intentionally calibrated as a harder set, with all items marked as difficult and more subtle alternatives. They are not verbatim copies of previous exams.
 
 ## LocalStorage Model
 
